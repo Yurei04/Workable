@@ -25,5 +25,47 @@
             "matches": ["all_urls"],
             "js": ["content.js"]
         }
-    ]
+    ],
+    "theme": {
+        "colors": {
+            "fname": "#D0E7F9",
+            "tab_background_text": "#2A5678",
+            "toolbar": "#D0E7F9",
+            "bookmark_text": "#2A5678",
+            "button_background_active": "#D0E7F9",
+            "button_background_hover": "#D0E7F9",
+            "icons": "#D0E7F9",
+            "icons_attention": "#D0E7F9",
+            "fname_inactive": "#D0E7F9",
+            "ntp_background": "#D0E7F9",
+            "ntp_card_background": "#D0E7F9",
+            "ntp_text": "#2A5678",
+            "popup": "#D0E7F9",
+            "popup_border": "#D0E7F9",
+            "popup_text": "#2A5678",
+            "popup_highlight": "#D0E7F9",
+            "popup_highlight_text": "#2A5678",
+            "sidebar_border": "#D0E7F9",
+            "sidebar_highlighted_text": "#2A5678",
+            "sidebar_text": "#2A5678",
+            "tab_background_seperator": "#2A5678",
+            "tab_line": "#2A5678",
+            "tab_loading": "#2A5678",
+            "tab_selected": "#2A5678",
+            "tab_text": "#2A5678",
+            "toolbar_bottom_separator": "#2A5678",
+            "toolbar_field": "#2A5678",
+            "toolbar_field_border": "#2A5678",
+            "toolbar_field_border_focus": "#2A5678",
+            "toolbar_field_focus": "#2A5678",
+            "toolbar_field_highlight": "#2A5678",
+            "toolbar_field_highlight_text": "#2A5678",
+            "toolbar_field_seperator": "#2A5678",
+            "toolbar_field_text": "#2A5678",
+            "toolbar_field_text_focus": "#2A5678",
+            "tool_bar_text": "#2A5678",
+            "toolbar_top_seperator": "#2A5678",
+            "toolbar_vertical_seperator": "#2A5678"
+        }
+    }
 }
