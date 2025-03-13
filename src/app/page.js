@@ -1,14 +1,13 @@
+import JobFindLayout from "@/components/route/jobFindLayout";
+import JobLayoutRoute from "@/layoutPage/jobFindRoute";
 import Homepage from "@/pages/homepage";
-import Navbar from "@/components/global/navbar";
-import Footer from "@/components/global/navbar";
-import JobFind from "@/pages/jobFind"
 
 
 export default function Home() {
   return (
-   <div className="justify-items-center items-center h-lvh w-lvh p-3.5"> 
+   <div className="justify-items-center items-center w-full p-3.5"> 
       <Homepage />
-      <JobFind />
+      <JobLayoutRoute />
    </div>
   );
 }
