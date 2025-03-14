@@ -3,7 +3,7 @@ import JobFindTableBack from "@/pages/jobFindTable";
 
 export default function JobLayoutRoute () {
     return (
-        <div className="w-full items-center">
+        <div className="w-full items-center justify-items-center">
             <JobFindSearch />
             <JobFindTableBack />
         </div>

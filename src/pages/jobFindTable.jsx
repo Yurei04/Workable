@@ -28,9 +28,16 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogClose,
+} from "@/components/ui/dialog";
 
-
-const ITEMS_PER_PAGE = 5;
+const ITEMS_PER_PAGE = 7;
 
 export default function JobFindTableBack() {
   const [data, setData] = useState([]);
@@ -38,12 +45,13 @@ export default function JobFindTableBack() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedType, setSelectedType] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
+  const [openDialog, setOpenDialog] = useState(false);
+  const [selectedJob, setSelectedJob] = useState(null);
 
   useEffect(() => {
     fetch("/database/job-database.json")
       .then((res) => res.json())
       .then((result) => {
-        console.log("Database JOB running");
         setData(result);
         setFilteredData(result);
       })
@@ -68,7 +76,7 @@ export default function JobFindTableBack() {
     }
 
     setFilteredData(filtered);
-    setCurrentPage(1); 
+    setCurrentPage(1);
   }, [searchTerm, selectedType, data]);
 
   // Pagination
@@ -82,8 +90,14 @@ export default function JobFindTableBack() {
     setCurrentPage(newPage);
   };
 
+  const handleOpenDialog = (job) => {
+    setSelectedJob(job);
+    setOpenDialog(true);
+  };
+
   return (
     <div className="w-full p-10 items-center justify-center">
+      {/* Search and Filters */}
       <div className="flex gap-2 mb-4">
         <Input
           placeholder="Search by job title or keyword..."
@@ -91,6 +105,7 @@ export default function JobFindTableBack() {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
 
+        {/* Job Type Dropdown */}
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="outline">
@@ -104,6 +119,12 @@ export default function JobFindTableBack() {
             <DropdownMenuItem onClick={() => setSelectedType("Full-time")}>
               Full-time
             </DropdownMenuItem>
+            <DropdownMenuItem onClick={() => setSelectedType("Part-time")}>
+              Part-time
+            </DropdownMenuItem>
+            <DropdownMenuItem onClick={() => setSelectedType("Onsite")}>
+              Onsite
+            </DropdownMenuItem>
             <DropdownMenuItem onClick={() => setSelectedType("Remote")}>
               Remote
             </DropdownMenuItem>
@@ -111,14 +132,15 @@ export default function JobFindTableBack() {
         </DropdownMenu>
       </div>
 
+      {/* Job Table */}
       <Table>
         <TableHeader>
           <TableRow>
             <TableHead>Title</TableHead>
             <TableHead>Type</TableHead>
-            <TableHead>Description</TableHead>
             <TableHead>Tool</TableHead>
             <TableHead>Info</TableHead>
+            <TableHead>More</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -126,7 +148,6 @@ export default function JobFindTableBack() {
             <TableRow key={index}>
               <TableCell>{job.job.title}</TableCell>
               <TableCell>{job.job.type}</TableCell>
-              <TableCell>{job.job.des}</TableCell>
               <TableCell>
                 <a
                   href={job.job.resources.tool.link}
@@ -147,44 +168,104 @@ export default function JobFindTableBack() {
                   {job.job.resources.information.title}
                 </a>
               </TableCell>
+              <TableCell>
+                <Button onClick={() => handleOpenDialog(job)}>More</Button>
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>
       </Table>
 
+      {/* Modal for Job Details */}
+      {selectedJob && (
+        <Dialog open={openDialog} onOpenChange={setOpenDialog}>
+          <DialogContent className="max-w-full w-full h-[90vh]">
+            <DialogHeader>
+              <DialogTitle className="text-2xl">
+                {selectedJob.job.title}
+              </DialogTitle>
+              <DialogClose />
+            </DialogHeader>
+
+            {/* Job Image */}
+            <div className="w-full h-56 bg-gray-200 rounded-md overflow-hidden">
+              <img
+                src={selectedJob.job.image || "/placeholder.png"}
+                alt="Job"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Job Description */}
+            <div className="mt-4 space-y-2">
+              <p className="text-lg font-semibold">Description:</p>
+              <p>{selectedJob.job.des}</p>
+            </div>
+
+            {/* Qualifications */}
+            <div className="mt-4 space-y-2">
+              <p className="text-lg font-semibold">Qualifications:</p>
+              <ul className="list-disc list-inside">
+                {selectedJob.job.qualifications?.map((q, index) => (
+                  <li key={index}>{q}</li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Apply Button */}
+            <div className="mt-6 flex justify-between">
+              <Button asChild>
+                <a href={selectedJob.job.applyLink} target="_blank">
+                  Apply Now
+                </a>
+              </Button>
+
+              {/* External Links */}
+              <div className="flex gap-2">
+                <a
+                  href={selectedJob.job.resources.tool.link}
+                  target="_blank"
+                  className="text-blue-500 hover:underline"
+                >
+                  {selectedJob.job.resources.tool.title}
+                </a>
+                <a
+                  href={selectedJob.job.resources.information.link}
+                  target="_blank"
+                  className="text-blue-500 hover:underline"
+                >
+                  {selectedJob.job.resources.information.title}
+                </a>
+              </div>
+            </div>
+          </DialogContent>
+        </Dialog>
+      )}
+
+      {/* Pagination */}
       {totalPages > 1 && (
-        <div className="mt-6">
-          <Pagination>
-            <PaginationContent>
-              <PaginationItem>
-                <PaginationPrevious
-                  onClick={() => handlePageChange(currentPage - 1)}
-                  disabled={currentPage === 1}
-                />
+        <Pagination className="mt-6">
+          <PaginationContent>
+            <PaginationPrevious
+              onClick={() => handlePageChange(currentPage - 1)}
+              disabled={currentPage === 1}
+            />
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+              <PaginationItem key={page}>
+                <PaginationLink
+                  onClick={() => handlePageChange(page)}
+                  isActive={page === currentPage}
+                >
+                  {page}
+                </PaginationLink>
               </PaginationItem>
-
-              {Array.from({ length: totalPages }, (_, i) => i + 1).map(
-                (page) => (
-                  <PaginationItem key={page}>
-                    <PaginationLink
-                      onClick={() => handlePageChange(page)}
-                      isActive={page === currentPage}
-                    >
-                      {page}
-                    </PaginationLink>
-                  </PaginationItem>
-                )
-              )}
-
-              <PaginationItem>
-                <PaginationNext
-                  onClick={() => handlePageChange(currentPage + 1)}
-                  disabled={currentPage === totalPages}
-                />
-              </PaginationItem>
-            </PaginationContent>
-          </Pagination>
-        </div>
+            ))}
+            <PaginationNext
+              onClick={() => handlePageChange(currentPage + 1)}
+              disabled={currentPage === totalPages}
+            />
+          </PaginationContent>
+        </Pagination>
       )}
     </div>
   );
