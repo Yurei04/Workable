@@ -1,4 +1,4 @@
-import JobFindLayout from "@/components/route/jobFindLayout";
+import JobFindLayout from "@/layoutPage/jobFindLayout";
 import JobLayoutRoute from "@/layoutPage/jobFindRoute";
 import Homepage from "@/pages/homepage";
 

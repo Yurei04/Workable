@@ -79,6 +79,10 @@ export default function JobFindTableBack() {
     setCurrentPage(1);
   }, [searchTerm, selectedType, data]);
 
+  const listen = () => {
+    
+  }
+
   // Pagination
   const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE);
   const paginatedData = filteredData.slice(
@@ -141,6 +145,7 @@ export default function JobFindTableBack() {
             <TableHead>Tool</TableHead>
             <TableHead>Info</TableHead>
             <TableHead>More</TableHead>
+            <TableHead>Listen</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -171,10 +176,15 @@ export default function JobFindTableBack() {
               <TableCell>
                 <Button onClick={() => handleOpenDialog(job)}>More</Button>
               </TableCell>
+              <TableCell>
+                <Button onClick={() => listen(job)}>Listen</Button>
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>
       </Table>
+
+
 
       {/* Modal for Job Details */}
       {selectedJob && (
