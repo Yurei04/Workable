@@ -1,7 +1,11 @@
-export default function JobFindLayout () {
-    return (
-        <div className="justify-items-center align-center h-lvh w-lv'">
+import JobFindSearch from "@/pages/jobFindSearch";
+import JobFindTableBack from "@/pages/jobFindTable";
 
+export default function JobLayoutRoute () {
+    return (
+        <div className="w-full items-center justify-items-center">
+            <JobFindSearch />
+            <JobFindTableBack />
         </div>
     )
 }
