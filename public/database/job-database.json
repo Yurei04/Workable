@@ -1,211 +1,98 @@
 [
     {
         "job": {
+            "title": "Software Engineer",
+            "keywords": ["code", "think", "develop", "debug", "deploy"],
+            "type": "Remote",
+            "des": "A software engineer designs, develops, and maintains software applications.",
+            "image": "",
+            "applyLink": "https://company.com/apply",
+            "requirements": ["JavaScript", "React", "REST APIs", "Problem-solving"],
+            "qualifications": [
+                "Proficient in JavaScript and React",
+                "Experience with REST APIs",
+                "Strong problem-solving skills"
+            ]
+        }
+    },
+    {
+        "job": {
             "title": "Teacher",
             "keywords": ["Education", "Teaching", "Lesson Planning", "Classroom Management"],
             "type": "Full-time",
             "des": "A teacher educates students, creates lesson plans, and assesses student progress.",
-            "resources": {
-                "tool": {
-                    "title": "Google Classroom",
-                    "des": "An online platform for managing classes and assignments.",
-                    "link": "https://classroom.google.com/"
-                },
-                "information": {
-                    "title": "Effective Teaching Strategies",
-                    "des": "A guide on improving teaching methods and student engagement.",
-                    "link": "https://www.edutopia.org/article/7-effective-teaching-strategies/"
-                }
-            }
+            "image": "",
+            "applyLink": "https://educationjobs.com/apply",
+            "requirements": ["Teaching certification", "Classroom management skills", "Lesson planning"],
+            "qualifications": [
+                "Bachelor's degree in Education or related field",
+                "Experience in teaching and curriculum development",
+                "Strong classroom management skills"
+            ]
         }
     },
-
     {
         "job": {
             "title": "Financial Analyst",
             "keywords": ["Finance", "Investment", "Risk Management", "Data Analysis"],
             "type": "Full-time",
             "des": "A financial analyst evaluates financial data and provides investment recommendations.",
-            "resources": {
-                "tool": {
-                    "title": "Bloomberg Terminal",
-                    "des": "A financial tool for real-time data and analytics.",
-                    "link": "https://www.bloomberg.com/professional/"
-                },
-                "information": {
-                    "title": "Investment Strategies",
-                    "des": "An introduction to financial planning and investment analysis.",
-                    "link": "https://www.investopedia.com/"
-                }
-            }
+            "image": "",
+            "applyLink": "https://financejobs.com/apply",
+            "requirements": ["Financial modeling", "Risk assessment", "Market analysis"],
+            "qualifications": [
+                "Degree in Finance, Economics, or related field",
+                "Strong analytical and problem-solving skills",
+                "Experience with financial data and reporting"
+            ]
         }
     },
-
     {
         "job": {
-            "title": "Nurse",
-            "keywords": ["Healthcare", "Patient Care", "Medical Assistance", "Clinical Skills"],
-            "type": "Full-time",
-            "des": "A nurse provides medical care, assists doctors, and supports patients.",
-            "resources": {
-                "tool": {
-                    "title": "Medscape",
-                    "des": "A platform for medical news and healthcare updates.",
-                    "link": "https://www.medscape.com/"
-                },
-                "information": {
-                    "title": "Nursing Guide",
-                    "des": "A comprehensive guide to nursing practices and patient care.",
-                    "link": "https://www.nursingworld.org/"
-                }
-            }
+            "title": "Graphic Designer",
+            "keywords": ["Design", "Creativity", "Adobe Suite", "Branding"],
+            "type": "Freelance",
+            "des": "A graphic designer creates visual concepts to communicate ideas.",
+            "image": "",
+            "applyLink": "https://designjobs.com/apply",
+            "requirements": ["Adobe Creative Suite", "Branding knowledge", "Typography"],
+            "qualifications": [
+                "Degree in Graphic Design or related field",
+                "Experience in branding and UI/UX design",
+                "Strong portfolio showcasing creativity"
+            ]
         }
     },
-
-    {
-        "job": {
-            "title": "UX/UI Designer",
-            "keywords": ["User Experience", "Prototyping", "Design Thinking", "Wireframing"],
-            "type": "Remote",
-            "des": "A UX/UI designer creates user-friendly interfaces and improves digital experiences.",
-            "resources": {
-                "tool": {
-                    "title": "Figma",
-                    "des": "A collaborative tool for designing and prototyping UI/UX projects.",
-                    "link": "https://www.figma.com/"
-                },
-                "information": {
-                    "title": "UX Design Principles",
-                    "des": "A guide on designing intuitive user interfaces.",
-                    "link": "https://www.smashingmagazine.com/category/uxdesign/"
-                }
-            }
-        }
-    },
-
     {
         "job": {
             "title": "Photographer",
             "keywords": ["Photography", "Editing", "Lighting", "Creativity"],
             "type": "Freelance",
-            "des": "A photographer captures images for various industries, including fashion, journalism, and marketing.",
-            "resources": {
-                "tool": {
-                    "title": "Adobe Lightroom",
-                    "des": "A powerful photo editing and management software.",
-                    "link": "https://www.adobe.com/products/photoshop-lightroom.html"
-                },
-                "information": {
-                    "title": "Photography Techniques",
-                    "des": "A guide to professional photography skills and equipment.",
-                    "link": "https://www.nationalgeographic.com/photography/"
-                }
-            }
+            "des": "A photographer captures images for events, portraits, or commercial use.",
+            "image": "",
+            "applyLink": "https://photographyjobs.com/apply",
+            "requirements": ["Experience with DSLR cameras", "Lighting techniques", "Editing software"],
+            "qualifications": [
+                "Experience in photography and editing software",
+                "Strong understanding of lighting and composition",
+                "Portfolio showcasing past work"
+            ]
         }
     },
-
     {
         "job": {
-            "title": "Electrician",
-            "keywords": ["Electrical Wiring", "Circuit Design", "Safety", "Troubleshooting"],
+            "title": "Nurse",
+            "keywords": ["Healthcare", "Patient Care", "Medical Assistance", "Compassion"],
             "type": "Full-time",
-            "des": "An electrician installs, repairs, and maintains electrical systems in residential and commercial buildings.",
-            "resources": {
-                "tool": {
-                    "title": "Fluke Multimeter",
-                    "des": "A tool for measuring voltage, current, and resistance in electrical systems.",
-                    "link": "https://www.fluke.com/"
-                },
-                "information": {
-                    "title": "Electrical Safety Guide",
-                    "des": "Best practices and safety tips for electricians.",
-                    "link": "https://www.osha.gov/electrical/"
-                }
-            }
-        }
-    },
-
-    {
-        "job": {
-            "title": "Chef",
-            "keywords": ["Cooking", "Food Preparation", "Recipe Development", "Kitchen Management"],
-            "type": "Full-time",
-            "des": "A chef prepares and cooks food, develops recipes, and manages kitchen staff.",
-            "resources": {
-                "tool": {
-                    "title": "Sous Vide Precision Cooker",
-                    "des": "A modern cooking tool for precise temperature control.",
-                    "link": "https://anovaculinary.com/"
-                },
-                "information": {
-                    "title": "Culinary Techniques",
-                    "des": "A guide to professional cooking skills and food presentation.",
-                    "link": "https://www.cordonbleu.edu/"
-                }
-            }
-        }
-    },
-
-    {
-        "job": {
-            "title": "Architect",
-            "keywords": ["Architecture", "Building Design", "CAD", "Structural Engineering"],
-            "type": "Full-time",
-            "des": "An architect designs buildings and structures while ensuring functionality and safety.",
-            "resources": {
-                "tool": {
-                    "title": "AutoCAD Architecture",
-                    "des": "A design tool for creating architectural blueprints.",
-                    "link": "https://www.autodesk.com/products/autocad-architecture/"
-                },
-                "information": {
-                    "title": "Architecture Design Guide",
-                    "des": "A resource for learning architectural principles and design.",
-                    "link": "https://www.archdaily.com/"
-                }
-            }
-        }
-    },
-
-    {
-        "job": {
-            "title": "Fitness Trainer",
-            "keywords": ["Exercise", "Personal Training", "Health", "Wellness"],
-            "type": "Freelance",
-            "des": "A fitness trainer guides individuals in achieving their fitness and health goals.",
-            "resources": {
-                "tool": {
-                    "title": "MyFitnessPal",
-                    "des": "A fitness and diet tracking app for managing health goals.",
-                    "link": "https://www.myfitnesspal.com/"
-                },
-                "information": {
-                    "title": "Workout Routines",
-                    "des": "A collection of workout plans and fitness tips.",
-                    "link": "https://www.bodybuilding.com/"
-                }
-            }
-        }
-    },
-
-    {
-        "job": {
-            "title": "Psychologist",
-            "keywords": ["Mental Health", "Counseling", "Therapy", "Behavioral Science"],
-            "type": "Full-time",
-            "des": "A psychologist studies human behavior and provides therapy to improve mental health.",
-            "resources": {
-                "tool": {
-                    "title": "BetterHelp",
-                    "des": "An online counseling platform for mental health support.",
-                    "link": "https://www.betterhelp.com/"
-                },
-                "information": {
-                    "title": "Psychology Research",
-                    "des": "A hub for the latest psychology studies and mental health insights.",
-                    "link": "https://www.psychologytoday.com/"
-                }
-            }
+            "des": "A nurse provides healthcare services, assists in medical procedures, and supports patient recovery.",
+            "image": "",
+            "applyLink": "https://healthcarejobs.com/apply",
+            "requirements": ["Nursing certification", "Patient care experience", "Medical knowledge"],
+            "qualifications": [
+                "Degree in Nursing or related field",
+                "Experience in patient care and medical procedures",
+                "Licensed to practice as a nurse"
+            ]
         }
     }
 ]

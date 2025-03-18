@@ -1,0 +1,72 @@
+[
+    {
+        "information": {
+            "title": "Psychology Research",
+            "type": "Mental Health Resource",
+            "keywords": ["mental health", "therapy", "counseling"],
+            "des": "A hub for the latest psychology studies and mental health insights.",
+            "link": "https://www.psychologytoday.com/",
+            "severityMatch": 10
+        }
+    },
+    {
+        "libraryBook": {
+            "title": "Understanding Dyslexia",
+            "type": "Article",
+            "keywords": ["dyslexia", "reading"],
+            "des": "A research article on dyslexia and effective reading strategies.",
+            "link": "https://www.dyslexiaresource.org/research",
+            "severityMatch": 10
+        }
+    },
+    {
+        "information": {
+            "title": "Effective Teaching Strategies",
+            "type": "Teaching Guide",
+            "keywords": ["education", "lesson planning", "teaching"],
+            "des": "A guide on improving teaching methods and student engagement.",
+            "link": "https://www.edutopia.org/article/7-effective-teaching-strategies/",
+            "severityMatch": 8
+        }
+    },
+    {
+        "information": {
+            "title": "Investment Strategies",
+            "type": "Finance Resource",
+            "keywords": ["finance", "investment", "money management"],
+            "des": "An introduction to financial planning and investment analysis.",
+            "link": "https://www.investopedia.com/",
+            "severityMatch": 7
+        }
+    },
+    {
+        "information": {
+            "title": "UX Design Principles",
+            "type": "Design Guide",
+            "keywords": ["UX/UI", "usability", "design thinking"],
+            "des": "A guide on designing intuitive user interfaces.",
+            "link": "https://www.smashingmagazine.com/category/uxdesign/",
+            "severityMatch": 9
+        }
+    },
+    {
+        "information": {
+            "title": "Photography Techniques",
+            "type": "Photography Guide",
+            "keywords": ["photography", "camera", "lighting"],
+            "des": "A guide to professional photography skills and equipment.",
+            "link": "https://www.nationalgeographic.com/photography/",
+            "severityMatch": 9
+        }
+    },
+    {
+        "information": {
+            "title": "Nursing Guide",
+            "type": "Healthcare Guide",
+            "keywords": ["nursing", "patient care", "medical"],
+            "des": "A comprehensive guide to nursing practices and patient care.",
+            "link": "https://www.nursingworld.org/",
+            "severityMatch": 10
+        }
+    }
+]

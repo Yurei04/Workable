@@ -1,0 +1,80 @@
+[
+    {
+        "tool": {
+            "title": "BetterHelp",
+            "des": "An online counseling platform for mental health support.",
+            "link": "https://www.betterhelp.com/"
+        }
+    },
+    {
+        "tool": {
+            "title": "Accessibly",
+            "type": "Chrome Extension",
+            "keywords": ["dyslexia", "reading"],
+            "des": "An extension that helps dyslexic users read better.",
+            "link": "https://chrome.google.com/opendyslexic",
+            "severityMatch": 10
+        }
+    },    
+    {
+        "tool": {
+            "title": "BetterHelp",
+            "type": "Online Counseling",
+            "keywords": ["mental health", "therapy", "support"],
+            "des": "An online counseling platform for mental health support.",
+            "link": "https://www.betterhelp.com/",
+            "severityMatch": 10
+        }
+    },
+    {
+        "tool": {
+            "title": "Google Classroom",
+            "type": "Education Platform",
+            "keywords": ["education", "teaching", "learning"],
+            "des": "An online platform for managing classes and assignments.",
+            "link": "https://classroom.google.com/",
+            "severityMatch": 8
+        }
+    },
+    {
+        "tool": {
+            "title": "Bloomberg Terminal",
+            "type": "Financial Tool",
+            "keywords": ["finance", "investment", "market analysis"],
+            "des": "A financial tool for real-time data and analytics.",
+            "link": "https://www.bloomberg.com/professional/",
+            "severityMatch": 7
+        }
+    },
+    {
+        "tool": {
+            "title": "Figma",
+            "type": "Design Tool",
+            "keywords": ["UX/UI", "design", "prototyping"],
+            "des": "A collaborative tool for designing and prototyping UI/UX projects.",
+            "link": "https://www.figma.com/",
+            "severityMatch": 9
+        }
+    },
+    {
+        "tool": {
+            "title": "Adobe Lightroom",
+            "type": "Photo Editing Software",
+            "keywords": ["photography", "editing", "retouching"],
+            "des": "A powerful photo editing and management software.",
+            "link": "https://www.adobe.com/products/photoshop-lightroom.html",
+            "severityMatch": 9
+        }
+    },
+    {
+        "tool": {
+            "title": "Medscape",
+            "type": "Medical Resource",
+            "keywords": ["healthcare", "medicine", "nursing"],
+            "des": "A platform for medical news and healthcare updates.",
+            "link": "https://www.medscape.com/",
+            "severityMatch": 10
+        }
+    }
+]
+    
