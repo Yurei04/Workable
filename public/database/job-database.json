@@ -3,7 +3,7 @@
         "job": {
             "title": "Software Engineer",
             "keywords": ["code", "think", "develop", "debug", "deploy"],
-            "type": "Remote",
+            "type": "remote",
             "des": "A software engineer designs, develops, and maintains software applications.",
             "image": "",
             "applyLink": "https://company.com/apply",
@@ -13,178 +13,157 @@
                 "Experience with REST APIs",
                 "Strong problem-solving skills"
             ],
-            "tool": {
-            "title": "BetterHelp",
-            "des": "An online counseling platform for mental health support.",
-            "link": "https://www.betterhelp.com/"
-            },
-            "information": {
-            "title": "Psychology Research",
-            "type": "Mental Health Resource",
-            "keywords": ["mental health", "therapy", "counseling"],
-            "des": "A hub for the latest psychology studies and mental health insights.",
-            "link": "https://www.psychologytoday.com/",
-            "severityMatch": 10
-            }  
+            "resources": {
+                "tool": {
+                    "title": "BetterHelp",
+                    "des": "An online counseling platform for mental health support.",
+                    "link": "https://www.betterhelp.com/"
+                },
+                "information": {
+                    "title": "Psychology Research",
+                    "des": "A hub for the latest psychology studies and mental health insights.",
+                    "link": "https://www.psychologytoday.com/"
+                }
+            }
         }
     },
     {
         "job": {
             "title": "Teacher",
-            "keywords": ["Education", "Teaching", "Lesson Planning", "Classroom Management"],
-            "type": "Full-time",
-            "des": "A teacher educates students, creates lesson plans, and assesses student progress.",
+            "keywords": ["education", "teaching", "lesson planning", "classroom management"],
+            "type": "onsite",
+            "des": "A teacher educates students and creates engaging lesson plans.",
             "image": "",
-            "applyLink": "https://educationjobs.com/apply",
-            "requirements": ["Teaching certification", "Classroom management skills", "Lesson planning"],
+            "applyLink": "https://schooljobs.com/apply",
+            "requirements": ["Lesson planning", "Classroom management", "Communication skills"],
             "qualifications": [
-                "Bachelor's degree in Education or related field",
-                "Experience in teaching and curriculum development",
-                "Strong classroom management skills"
+                "Bachelor's degree in Education",
+                "Experience in classroom management",
+                "Strong communication and leadership skills"
             ],
-            "tool": {
-            "title": "Google Classroom",
-            "type": "Education Platform",
-            "keywords": ["education", "teaching", "learning"],
-            "des": "An online platform for managing classes and assignments.",
-            "link": "https://classroom.google.com/",
-            "severityMatch": 8
-            },
-            "information": {
-            "title": "Effective Teaching Strategies",
-            "type": "Teaching Guide",
-            "keywords": ["education", "lesson planning", "teaching"],
-            "des": "A guide on improving teaching methods and student engagement.",
-            "link": "https://www.edutopia.org/article/7-effective-teaching-strategies/",
-            "severityMatch": 8
+            "resources": {
+                "tool": {
+                    "title": "Google Classroom",
+                    "des": "An online platform for managing classes and assignments.",
+                    "link": "https://classroom.google.com/"
+                },
+                "information": {
+                    "title": "Effective Teaching Strategies",
+                    "des": "A guide on improving teaching methods and student engagement.",
+                    "link": "https://www.edutopia.org/article/7-effective-teaching-strategies/"
+                }
             }
         }
     },
     {
         "job": {
             "title": "Financial Analyst",
-            "keywords": ["Finance", "Investment", "Risk Management", "Data Analysis"],
-            "type": "Full-time",
-            "des": "A financial analyst evaluates financial data and provides investment recommendations.",
+            "keywords": ["finance", "investment", "data analysis", "market trends"],
+            "type": "hybrid",
+            "des": "A financial analyst examines financial data and trends to guide investment decisions.",
             "image": "",
             "applyLink": "https://financejobs.com/apply",
-            "requirements": ["Financial modeling", "Risk assessment", "Market analysis"],
+            "requirements": ["Financial modeling", "Data analysis", "Market research"],
             "qualifications": [
-                "Degree in Finance, Economics, or related field",
+                "Degree in Finance or Economics",
                 "Strong analytical and problem-solving skills",
-                "Experience with financial data and reporting"
+                "Proficiency in financial software"
             ],
-            "tool": {
-            "title": "Bloomberg Terminal",
-            "type": "Financial Tool",
-            "keywords": ["finance", "investment", "market analysis"],
-            "des": "A financial tool for real-time data and analytics.",
-            "link": "https://www.bloomberg.com/professional/",
-            "severityMatch": 7
-            },
-            "information": {
-            "title": "Investment Strategies",
-            "type": "Finance Resource",
-            "keywords": ["finance", "investment", "money management"],
-            "des": "An introduction to financial planning and investment analysis.",
-            "link": "https://www.investopedia.com/",
-            "severityMatch": 7
+            "resources": {
+                "tool": {
+                    "title": "Bloomberg Terminal",
+                    "des": "A financial tool for real-time data and analytics.",
+                    "link": "https://www.bloomberg.com/professional/"
+                },
+                "information": {
+                    "title": "Investment Strategies",
+                    "des": "An introduction to financial planning and investment analysis.",
+                    "link": "https://www.investopedia.com/"
+                }
             }
         }
     },
     {
         "job": {
-            "title": "Graphic Designer",
-            "keywords": ["Design", "Creativity", "Adobe Suite", "Branding"],
-            "type": "Freelance",
-            "des": "A graphic designer creates visual concepts to communicate ideas.",
+            "title": "UX Designer",
+            "keywords": ["UX/UI", "design", "user experience", "wireframing"],
+            "type": "remote",
+            "des": "A UX designer creates intuitive and visually appealing user experiences.",
             "image": "",
             "applyLink": "https://designjobs.com/apply",
-            "requirements": ["Adobe Creative Suite", "Branding knowledge", "Typography"],
+            "requirements": ["Figma", "Wireframing", "User research"],
             "qualifications": [
-                "Degree in Graphic Design or related field",
-                "Experience in branding and UI/UX design",
-                "Strong portfolio showcasing creativity"
+                "Experience in UX/UI design",
+                "Strong portfolio of design projects",
+                "Proficiency in Figma and Adobe XD"
             ],
-            "tool": {
-            "title": "Figma",
-            "type": "Design Tool",
-            "keywords": ["UX/UI", "design", "prototyping"],
-            "des": "A collaborative tool for designing and prototyping UI/UX projects.",
-            "link": "https://www.figma.com/",
-            "severityMatch": 9
-            },
-            "information": {
-            "title": "UX Design Principles",
-            "type": "Design Guide",
-            "keywords": ["UX/UI", "usability", "design thinking"],
-            "des": "A guide on designing intuitive user interfaces.",
-            "link": "https://www.smashingmagazine.com/category/uxdesign/",
-            "severityMatch": 9
+            "resources": {
+                "tool": {
+                    "title": "Figma",
+                    "des": "A collaborative tool for designing and prototyping UI/UX projects.",
+                    "link": "https://www.figma.com/"
+                },
+                "information": {
+                    "title": "UX Design Principles",
+                    "des": "A guide on designing intuitive user interfaces.",
+                    "link": "https://www.smashingmagazine.com/category/uxdesign/"
+                }
             }
         }
     },
     {
         "job": {
             "title": "Photographer",
-            "keywords": ["Photography", "Editing", "Lighting", "Creativity"],
-            "type": "Freelance",
-            "des": "A photographer captures images for events, portraits, or commercial use.",
+            "keywords": ["photography", "editing", "lighting", "composition"],
+            "type": "freelance",
+            "des": "A photographer captures and edits high-quality images for various purposes.",
             "image": "",
-            "applyLink": "https://photographyjobs.com/apply",
-            "requirements": ["Experience with DSLR cameras", "Lighting techniques", "Editing software"],
+            "applyLink": "https://photojobs.com/apply",
+            "requirements": ["Camera operation", "Lighting techniques", "Photo editing"],
             "qualifications": [
-                "Experience in photography and editing software",
-                "Strong understanding of lighting and composition",
-                "Portfolio showcasing past work"
+                "Experience in professional photography",
+                "Proficiency in Adobe Lightroom and Photoshop",
+                "Strong portfolio of photography work"
             ],
-            "tool": {
-            "title": "Adobe Lightroom",
-            "type": "Photo Editing Software",
-            "keywords": ["photography", "editing", "retouching"],
-            "des": "A powerful photo editing and management software.",
-            "link": "https://www.adobe.com/products/photoshop-lightroom.html",
-            "severityMatch": 9
-            },
-            "information": {
-            "title": "Photography Techniques",
-            "type": "Photography Guide",
-            "keywords": ["photography", "camera", "lighting"],
-            "des": "A guide to professional photography skills and equipment.",
-            "link": "https://www.nationalgeographic.com/photography/",
-            "severityMatch": 9
+            "resources": {
+                "tool": {
+                    "title": "Adobe Lightroom",
+                    "des": "A powerful photo editing and management software.",
+                    "link": "https://www.adobe.com/products/photoshop-lightroom.html"
+                },
+                "information": {
+                    "title": "Photography Techniques",
+                    "des": "A guide to professional photography skills and equipment.",
+                    "link": "https://www.nationalgeographic.com/photography/"
+                }
             }
         }
     },
     {
         "job": {
             "title": "Nurse",
-            "keywords": ["Healthcare", "Patient Care", "Medical Assistance", "Compassion"],
-            "type": "Full-time",
-            "des": "A nurse provides healthcare services, assists in medical procedures, and supports patient recovery.",
+            "keywords": ["nursing", "patient care", "healthcare", "medical"],
+            "type": "onsite",
+            "des": "A nurse provides medical care and supports patients' health and recovery.",
             "image": "",
-            "applyLink": "https://healthcarejobs.com/apply",
-            "requirements": ["Nursing certification", "Patient care experience", "Medical knowledge"],
+            "applyLink": "https://hospitaljobs.com/apply",
+            "requirements": ["Patient care", "Medical procedures", "Compassion"],
             "qualifications": [
-                "Degree in Nursing or related field",
-                "Experience in patient care and medical procedures",
-                "Licensed to practice as a nurse"
+                "Registered Nurse (RN) certification",
+                "Experience in patient care",
+                "Strong knowledge of medical procedures"
             ],
-            "tool": {
-            "title": "Medscape",
-            "type": "Medical Resource",
-            "keywords": ["healthcare", "medicine", "nursing"],
-            "des": "A platform for medical news and healthcare updates.",
-            "link": "https://www.medscape.com/",
-            "severityMatch": 10
-            },
-            "information": {
-            "title": "Nursing Guide",
-            "type": "Healthcare Guide",
-            "keywords": ["nursing", "patient care", "medical"],
-            "des": "A comprehensive guide to nursing practices and patient care.",
-            "link": "https://www.nursingworld.org/",
-            "severityMatch": 10
+            "resources": {
+                "tool": {
+                    "title": "Medscape",
+                    "des": "A platform for medical news and healthcare updates.",
+                    "link": "https://www.medscape.com/"
+                },
+                "information": {
+                    "title": "Nursing Guide",
+                    "des": "A comprehensive guide to nursing practices and patient care.",
+                    "link": "https://www.nursingworld.org/"
+                }
             }
         }
     }
