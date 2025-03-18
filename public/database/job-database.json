@@ -12,7 +12,20 @@
                 "Proficient in JavaScript and React",
                 "Experience with REST APIs",
                 "Strong problem-solving skills"
-            ]
+            ],
+            "tool": {
+            "title": "BetterHelp",
+            "des": "An online counseling platform for mental health support.",
+            "link": "https://www.betterhelp.com/"
+            },
+            "information": {
+            "title": "Psychology Research",
+            "type": "Mental Health Resource",
+            "keywords": ["mental health", "therapy", "counseling"],
+            "des": "A hub for the latest psychology studies and mental health insights.",
+            "link": "https://www.psychologytoday.com/",
+            "severityMatch": 10
+            }  
         }
     },
     {
@@ -28,7 +41,23 @@
                 "Bachelor's degree in Education or related field",
                 "Experience in teaching and curriculum development",
                 "Strong classroom management skills"
-            ]
+            ],
+            "tool": {
+            "title": "Google Classroom",
+            "type": "Education Platform",
+            "keywords": ["education", "teaching", "learning"],
+            "des": "An online platform for managing classes and assignments.",
+            "link": "https://classroom.google.com/",
+            "severityMatch": 8
+            },
+            "information": {
+            "title": "Effective Teaching Strategies",
+            "type": "Teaching Guide",
+            "keywords": ["education", "lesson planning", "teaching"],
+            "des": "A guide on improving teaching methods and student engagement.",
+            "link": "https://www.edutopia.org/article/7-effective-teaching-strategies/",
+            "severityMatch": 8
+            }
         }
     },
     {
@@ -44,7 +73,23 @@
                 "Degree in Finance, Economics, or related field",
                 "Strong analytical and problem-solving skills",
                 "Experience with financial data and reporting"
-            ]
+            ],
+            "tool": {
+            "title": "Bloomberg Terminal",
+            "type": "Financial Tool",
+            "keywords": ["finance", "investment", "market analysis"],
+            "des": "A financial tool for real-time data and analytics.",
+            "link": "https://www.bloomberg.com/professional/",
+            "severityMatch": 7
+            },
+            "information": {
+            "title": "Investment Strategies",
+            "type": "Finance Resource",
+            "keywords": ["finance", "investment", "money management"],
+            "des": "An introduction to financial planning and investment analysis.",
+            "link": "https://www.investopedia.com/",
+            "severityMatch": 7
+            }
         }
     },
     {
@@ -60,7 +105,23 @@
                 "Degree in Graphic Design or related field",
                 "Experience in branding and UI/UX design",
                 "Strong portfolio showcasing creativity"
-            ]
+            ],
+            "tool": {
+            "title": "Figma",
+            "type": "Design Tool",
+            "keywords": ["UX/UI", "design", "prototyping"],
+            "des": "A collaborative tool for designing and prototyping UI/UX projects.",
+            "link": "https://www.figma.com/",
+            "severityMatch": 9
+            },
+            "information": {
+            "title": "UX Design Principles",
+            "type": "Design Guide",
+            "keywords": ["UX/UI", "usability", "design thinking"],
+            "des": "A guide on designing intuitive user interfaces.",
+            "link": "https://www.smashingmagazine.com/category/uxdesign/",
+            "severityMatch": 9
+            }
         }
     },
     {
@@ -76,7 +137,23 @@
                 "Experience in photography and editing software",
                 "Strong understanding of lighting and composition",
                 "Portfolio showcasing past work"
-            ]
+            ],
+            "tool": {
+            "title": "Adobe Lightroom",
+            "type": "Photo Editing Software",
+            "keywords": ["photography", "editing", "retouching"],
+            "des": "A powerful photo editing and management software.",
+            "link": "https://www.adobe.com/products/photoshop-lightroom.html",
+            "severityMatch": 9
+            },
+            "information": {
+            "title": "Photography Techniques",
+            "type": "Photography Guide",
+            "keywords": ["photography", "camera", "lighting"],
+            "des": "A guide to professional photography skills and equipment.",
+            "link": "https://www.nationalgeographic.com/photography/",
+            "severityMatch": 9
+            }
         }
     },
     {
@@ -92,7 +169,23 @@
                 "Degree in Nursing or related field",
                 "Experience in patient care and medical procedures",
                 "Licensed to practice as a nurse"
-            ]
+            ],
+            "tool": {
+            "title": "Medscape",
+            "type": "Medical Resource",
+            "keywords": ["healthcare", "medicine", "nursing"],
+            "des": "A platform for medical news and healthcare updates.",
+            "link": "https://www.medscape.com/",
+            "severityMatch": 10
+            },
+            "information": {
+            "title": "Nursing Guide",
+            "type": "Healthcare Guide",
+            "keywords": ["nursing", "patient care", "medical"],
+            "des": "A comprehensive guide to nursing practices and patient care.",
+            "link": "https://www.nursingworld.org/",
+            "severityMatch": 10
+            }
         }
     }
 ]
