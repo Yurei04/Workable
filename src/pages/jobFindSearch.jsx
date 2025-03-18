@@ -43,8 +43,8 @@ export default function JobFindSearch() {
         const [JobRes, userRes, libraryRes, toolRes] = await Promise.all([
           fetch("/database/resource.json").then(res => res.json()),
           fetch("/database/job-database.json").then(res => res.json()),
-          fetch("/database/job-database.json").then(res => res.json()),
-          fetch("/database/job-database.json").then(res => res.json())
+          fetch("/database/library.json").then(res => res.json()),
+          fetch("/database/tools.json").then(res => res.json())
         ]);
 
         setJobDatabase(JobRes || []);
@@ -58,38 +58,31 @@ export default function JobFindSearch() {
 
     fetchData();
   }, []);
-  const querySearch = () => {
+  
+function querySearch () {
+    if (!libraryDatabase.length || !toolDatabase.length || !jobDatabase.length) return;
     const searchQuery = searchTerm.toLowerCase();
 
     const filteredJobs = jobDatabase.filter((item) => {
-      const job = item?.job;
       return (
-        job?.title?.toLowerCase().includes(searchQuery) ||
-        job?.keywords?.some((keyword) =>
-          keyword.toLowerCase().includes(searchQuery)
-        )
-      );
+        item.job.title.toLowerCase().includes(searchQuery) ||
+        item.job.keywords.some((keyword) => searchQuery.includes(keyword.toLowerCase()))
+    );
     });
   
     // Filter tools
     const filteredTool = toolDatabase.filter((item) => {
-      const tool = item?.tool;
       return (
-        tool?.title?.toLowerCase().includes(searchQuery) ||
-        tool?.keywords?.some((keyword) =>
-          keyword.toLowerCase().includes(searchQuery)
-        )
+        item.tool.title.toLowerCase().includes(searchQuery) ||
+        item.tool.keywords.some((keyword) => searchQuery.includes(keyword.toLowerCase()))
       );
     });
   
     // Filter libraries
     const filteredLibrary = libraryDatabase.filter((item) => {
-      const library = item?.library;
       return (
-        library?.title?.toLowerCase().includes(searchQuery) ||
-        library?.keywords?.some((keyword) =>
-          keyword.toLowerCase().includes(searchQuery)
-        )
+        item.libraryBook.title.toLowerCase().includes(searchQuery) ||
+        item.libraryBook.keywords.some((keyword) => searchQuery.includes(keyword.toLowerCase()))
       );
     });
   
@@ -98,8 +91,8 @@ export default function JobFindSearch() {
     setDefaultTool(filteredTool);
     setOpenDialog(true);
   };
-  
-  const recommend = () => {
+
+  function recommend () {
     if (portfolioDatabase.length === 0) {
       alert("No user profile found for recommendations.");
       return;
@@ -149,53 +142,60 @@ export default function JobFindSearch() {
     setDefaultTool(recommendedTools);
 
     setOpenDialog(true);
-  };
+  }
+  
 
   const startListening = () => {
     if (recognitionRef.current) return;
-
+  
     const SpeechRecognition =
       window.SpeechRecognition || window.webkitSpeechRecognition;
     if (!SpeechRecognition) {
       alert("Speech recognition is not supported in this browser.");
       return;
     }
-
+  
     shouldKeepListening.current = true;
-
+  
     const recognition = new SpeechRecognition();
     recognition.lang = "en-US";
     recognition.interimResults = false;
     recognition.maxAlternatives = 1;
-
+  
     recognition.onstart = () => setListening(true);
-
+  
     recognition.onresult = (event) => {
       const transcript = event.results[0][0].transcript;
-      setSearchTerm(transcript); 
+      setSearchTerm(transcript);
     };
-
+  
     recognition.onend = () => {
-      setListening(false);
-      querySearch();
+      if (shouldKeepListening.current) {
+        recognition.start();
+      } else {
+        setListening(false);
+        querySearch();
+      }
     };
-
+  
     recognition.onerror = (event) => {
       console.error("Speech recognition error:", event.error);
       setListening(false);
     };
-
+  
     recognition.start();
     recognitionRef.current = recognition;
   };
-
+  
   const stopListening = () => {
+    shouldKeepListening.current = false;
     if (recognitionRef.current) {
       recognitionRef.current.stop();
       recognitionRef.current = null;
       setListening(false);
     }
   };
+  
 
   return (
     <div className="flex w-full items-center justify-start gap-3 p-4">
@@ -217,6 +217,9 @@ export default function JobFindSearch() {
 
 
       <Dialog open={openDialog} onOpenChange={setOpenDialog}>
+        <DialogHeader>
+          <DialogTitle>Results</DialogTitle>
+        </DialogHeader>
         <DialogContent>
           {/* Jobs Section */}
           {defaultJobs.length > 0 ? (
@@ -312,14 +315,14 @@ export default function JobFindSearch() {
               </TableHeader>
               <TableBody>
                 {defaultLibrary.map((libraryItem, index) => {
-                  const library = libraryItem.library;
+                  const libraryBook = libraryItem.libraryBook;
                   return (
                     <TableRow key={index}>
-                      <TableCell>{library.title || "#"}</TableCell>
-                      <TableCell>{library.type || "#"}</TableCell>
-                      <TableCell>{library.des || "#"}</TableCell>
+                      <TableCell>{libraryBook.title || "#"}</TableCell>
+                      <TableCell>{libraryBook.type || "#"}</TableCell>
+                      <TableCell>{libraryBook.des || "#"}</TableCell>
                       <TableCell>
-                        <a href={library.link || "#"} target="_blank" className="text-blue-500">
+                        <a href={libraryBook.link || "#"} target="_blank" className="text-blue-500">
                           Web Information
                         </a>
                       </TableCell>
