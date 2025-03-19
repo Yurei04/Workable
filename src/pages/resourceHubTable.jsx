@@ -50,12 +50,12 @@ export default function ResourceHubTable() {
 
   // Load library and tool data
   useEffect(() => {
-    fetch("/database/library.json")
+    fetch("/database/info-database.json")
       .then((res) => res.json())
       .then((result) => setLibraryData(result))
       .catch((error) => console.error("Failed to load library database:", error));
 
-    fetch("/database/tool.json")
+    fetch("/database/tool-database.json")
       .then((res) => res.json())
       .then((result) => setToolData(result))
       .catch((error) => console.error("Failed to load tool database:", error));
@@ -65,29 +65,24 @@ export default function ResourceHubTable() {
   useEffect(() => {
     let data = activeTab === "library" ? libraryData : toolData;
 
-    if (searchTerm) {
-      data = data.filter(
-        (item) =>
-          (item.library?.title?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            item.tool?.title?.toLowerCase().includes(searchTerm.toLowerCase())) ||
-          (item.library?.keywords?.some((keyword) =>
-            keyword.toLowerCase().includes(searchTerm.toLowerCase())
-          ) ||
-            item.tool?.keywords?.some((keyword) =>
-              keyword.toLowerCase().includes(searchTerm.toLowerCase())
-            ))
+    let filtered = data.filter((item) => {
+      const resource = activeTab === "library" ? item.information : item.tool;
+      return (
+        resource.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        resource.keywords.some((keyword) =>
+          keyword.toLowerCase().includes(searchTerm.toLowerCase())
+        )
       );
-    }
+    });
 
     if (selectedType) {
-      data = data.filter((item) =>
-        activeTab === "library"
-          ? item.library?.type === selectedType
-          : item.tool?.type === selectedType
-      );
+      filtered = filtered.filter((item) => {
+        const resource = activeTab === "library" ? item.information : item.tool;
+        return resource.type === selectedType;
+      });
     }
 
-    setFilteredData(data);
+    setFilteredData(filtered);
     setCurrentPage(1);
   }, [searchTerm, selectedType, activeTab, libraryData, toolData]);
 
@@ -113,7 +108,7 @@ export default function ResourceHubTable() {
           <TabsTrigger value="library" onClick={() => setActiveTab("library")}>
             Library
           </TabsTrigger>
-          <TabsTrigger value="tools" onClick={() => setActiveTab("tools")}>
+          <TabsTrigger value="tools" onClick={() => setActiveTab("tool")}>
             Tools
           </TabsTrigger>
         </TabsList>
@@ -178,17 +173,22 @@ export default function ResourceHubTable() {
             <TableHead>Type</TableHead>
             <TableHead>Link</TableHead>
             <TableHead>Severity Match</TableHead>
-            <TableHead>More</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
-          {paginatedData.map((item, index) => {
-            const resource = activeTab === "library" ? item.library : item.tool;
-            return (
-              <TableRow key={index}>
-                <TableCell>{resource.title}</TableCell>
-                <TableCell>{resource.type}</TableCell>
-                <TableCell>
+        {paginatedData.map((item, index) => {
+          const resource =
+            activeTab === "library" ? item?.information : item?.tool;
+
+          // Prevent rendering if resource is undefined
+          if (!resource) return null;
+
+          return (
+            <TableRow key={index}>
+              <TableCell>{resource.title || "N/A"}</TableCell>
+              <TableCell>{resource.type || "N/A"}</TableCell>
+              <TableCell>
+                {resource.link ? (
                   <a
                     href={resource.link}
                     target="_blank"
@@ -197,15 +197,16 @@ export default function ResourceHubTable() {
                   >
                     Open Link
                   </a>
-                </TableCell>
-                <TableCell>{resource.severityMatch}</TableCell>
-                <TableCell>
-                  <Button onClick={() => handleOpenDialog(resource)}>More</Button>
-                </TableCell>
-              </TableRow>
-            );
-          })}
-        </TableBody>
+                ) : (
+                  "N/A"
+                )}
+              </TableCell>
+              <TableCell>{resource.severityMatch || "N/A"}</TableCell>
+            </TableRow>
+          );
+        })}
+      </TableBody>
+
       </Table>
 
       {/* Pagination */}

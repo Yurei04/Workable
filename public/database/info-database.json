@@ -10,7 +10,7 @@
         }
     },
     {
-        "libraryBook": {
+        "information": {
             "title": "Understanding Dyslexia",
             "type": "Article",
             "keywords": ["dyslexia", "reading"],

@@ -49,7 +49,7 @@ export default function JobFindTableBack() {
   const [selectedJob, setSelectedJob] = useState(null);
 
   useEffect(() => {
-    fetch("/database/resource.json")
+    fetch("/database/job-database.json")
       .then((res) => res.json())
       .then((result) => {
         setData(result);

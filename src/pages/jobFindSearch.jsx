@@ -38,59 +38,83 @@ export default function JobFindSearch() {
   const shouldKeepListening = useRef(false);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const [JobRes, userRes, libraryRes, toolRes] = await Promise.all([
-          fetch("/database/resource.json").then(res => res.json()),
-          fetch("/database/job-database.json").then(res => res.json()),
-          fetch("/database/library.json").then(res => res.json()),
-          fetch("/database/tools.json").then(res => res.json())
-        ]);
+    fetch("/database/info-database.json")
+      .then((res) => res.json())
+      .then((result) => setLibraryDatabase(result))
+      .catch((error) => console.error("Failed to load library database:", error));
 
-        setJobDatabase(JobRes || []);
-        setPortfolioDatabase(userRes || []);
-        setLibraryDatabase(libraryRes || []);
-        setToolDatabase(toolRes || []);
-      } catch (error) {
-        console.error("Failed to load databases:", error);
-      }
-    };
+    fetch("/database/tool-database.json")
+      .then((res) => res.json())
+      .then((result) => setToolDatabase(result))
+      .catch((error) => console.error("Failed to load tool database:", error));
 
-    fetchData();
+    fetch("/database/job-database.json")
+    .then((res) => res.json())
+    .then((result) => setJobDatabase(result))
+    .catch((error) => console.error("Failed to load tool database:", error));
   }, []);
   
-function querySearch () {
+  function querySearch () {
     if (!libraryDatabase.length || !toolDatabase.length || !jobDatabase.length) return;
-    const searchQuery = searchTerm.toLowerCase();
-
-    const filteredJobs = jobDatabase.filter((item) => {
-      return (
-        item.job.title.toLowerCase().includes(searchQuery) ||
-        item.job.keywords.some((keyword) => searchQuery.includes(keyword.toLowerCase()))
-    );
-    });
+    if (searchTerm === "") {
+      alert("Please input keywords");
+      return;
+    }
+  
+    const searchTerms = searchTerm.toLowerCase().split(" ");
   
     // Filter tools
     const filteredTool = toolDatabase.filter((item) => {
-      return (
-        item.tool.title.toLowerCase().includes(searchQuery) ||
-        item.tool.keywords.some((keyword) => searchQuery.includes(keyword.toLowerCase()))
+      const tool = item.tool;
+      if (!tool || !tool.keywords) return false;
+
+      const titleMatch = searchTerms.some(term => tool.title?.toLowerCase().includes(term));
+      const keywordMatch = searchTerms.some(term =>
+        tool.keywords?.some((keyword) =>
+          keyword.toLowerCase().includes(term)
+        )
       );
+      return titleMatch || keywordMatch;
     });
   
-    // Filter libraries
+    // Filter library
     const filteredLibrary = libraryDatabase.filter((item) => {
-      return (
-        item.libraryBook.title.toLowerCase().includes(searchQuery) ||
-        item.libraryBook.keywords.some((keyword) => searchQuery.includes(keyword.toLowerCase()))
+      const information = item.information;
+      if (!information || !information.keywords) return false;
+  
+      const titleMatch = searchTerms.some(term => information.title?.toLowerCase().includes(term));
+      const keywordMatch = searchTerms.some(term =>
+        information.keywords?.some((keyword) =>
+          keyword.toLowerCase().includes(term)
+        )
       );
+      return titleMatch || keywordMatch;
     });
+  
+    // Filter jobs
+    const filteredJobs = jobDatabase.filter((item) => {
+      const job = item.job;
+      if (!job || !job.keywords) return false;
+  
+      const titleMatch = searchTerms.some(term => job.title?.toLowerCase().includes(term));
+      const keywordMatch = searchTerms.some(term =>
+        job.keywords?.some((keyword) =>
+          keyword.toLowerCase().includes(term)
+        )
+      );
+      return titleMatch || keywordMatch;
+    });
+  
+    if (filteredTool.length === 0 && filteredLibrary.length === 0 && filteredJobs.length === 0) {
+      console.warn("No matching results found");
+    }
   
     setDefaultJobs(filteredJobs);
     setDefaultLibrary(filteredLibrary);
     setDefaultTool(filteredTool);
     setOpenDialog(true);
-  };
+  }
+  
 
   function recommend () {
     if (portfolioDatabase.length === 0) {
@@ -174,7 +198,6 @@ function querySearch () {
         recognition.start();
       } else {
         setListening(false);
-        querySearch();
       }
     };
   
@@ -229,7 +252,8 @@ function querySearch () {
                   <TableHead>Job Title</TableHead>
                   <TableHead>Type</TableHead>
                   <TableHead>Description</TableHead>
-                  <TableHead>Tool Link</TableHead>
+                  <TableHead>Tools</TableHead>
+                  <TableHead>Info</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
@@ -238,18 +262,15 @@ function querySearch () {
                   return (
                     <TableRow key={index}>
                       <TableCell>{job.title || "#"}</TableCell>
-                      <TableCell>{job.specifics?.type || "#"}</TableCell>
+                      <TableCell>{job.type || "#"}</TableCell>
                       <TableCell>
-                        <a href={job.specifics?.resources?.tutorials?.links || "#"} target="_blank" className="text-blue-500">
-                          Tutorials
-                        </a>,{" "}
-                        <a href={job.specifics?.resources?.videos?.links || "#"} target="_blank" className="text-blue-500">
-                          Videos
+                        <a href={job.resources?.tool?.link || "#"} target="_blank" className="text-blue-500">
+                          Recommend Tool
                         </a>
                       </TableCell>
                       <TableCell>
-                        <a href={job.specifics?.Tools?.web?.links || "#"} target="_blank" className="text-blue-500">
-                          Web Tools
+                        <a href={job.resources?.information?.link || "#"} target="_blank" className="text-blue-500">
+                          Recommended Info
                         </a>
                       </TableCell>
                     </TableRow>
@@ -286,9 +307,10 @@ function querySearch () {
                       <TableCell>{tool.des || "#"}</TableCell>
                       <TableCell>
                         <a href={tool.link || "#"} target="_blank" className="text-blue-500">
-                          Web Tools
+                          Link
                         </a>
                       </TableCell>
+                      <TableCell> {tool.severityMatch} </TableCell>
                     </TableRow>
                   );
                 })}
@@ -315,17 +337,18 @@ function querySearch () {
               </TableHeader>
               <TableBody>
                 {defaultLibrary.map((libraryItem, index) => {
-                  const libraryBook = libraryItem.libraryBook;
+                  const information = libraryItem.information;
                   return (
                     <TableRow key={index}>
-                      <TableCell>{libraryBook.title || "#"}</TableCell>
-                      <TableCell>{libraryBook.type || "#"}</TableCell>
-                      <TableCell>{libraryBook.des || "#"}</TableCell>
+                      <TableCell>{information.title || "#"}</TableCell>
+                      <TableCell>{information.type || "#"}</TableCell>
+                      <TableCell>{information.des || "#"}</TableCell>
                       <TableCell>
-                        <a href={libraryBook.link || "#"} target="_blank" className="text-blue-500">
-                          Web Information
+                        <a href={information.link || "#"} target="_blank" className="text-blue-500">
+                          Link
                         </a>
                       </TableCell>
+                      <TableCell> {information.severityMatch} </TableCell>
                     </TableRow>
                   );
                 })}

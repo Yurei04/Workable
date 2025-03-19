@@ -21,11 +21,9 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function ResourceFindSearch() {
   const [toolDatabase, setToolDatabase] = useState([]);
-  const [jobDatabase, setJobDatabase] = useState([]);
   const [portfolioDatabase, setPortfolioDatabase] = useState([]);
   const [libraryDatabase, setLibraryDatabase] = useState([]);
 
-  const [defaultJobs, setDefaultJobs] = useState([]);
   const [defaultLibrary, setDefaultLibrary] = useState([]);
   const [defaultTool, setDefaultTool] = useState([]);
   const [defaultProfile, setDefaultProfile] = useState([]);
@@ -38,59 +36,68 @@ export default function ResourceFindSearch() {
   const shouldKeepListening = useRef(false);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const [JobRes, userRes, libraryRes, toolRes] = await Promise.all([
-          fetch("/database/resource.json").then(res => res.json()),
-          fetch("/database/job-database.json").then(res => res.json()),
-          fetch("/database/library.json").then(res => res.json()),
-          fetch("/database/tools.json").then(res => res.json())
-        ]);
+    fetch("/database/info-database.json")
+      .then((res) => res.json())
+      .then((result) => setLibraryDatabase(result))
+      .catch((error) => console.error("Failed to load library database:", error));
 
-        setJobDatabase(JobRes || []);
-        setPortfolioDatabase(userRes || []);
-        setLibraryDatabase(libraryRes || []);
-        setToolDatabase(toolRes || []);
-      } catch (error) {
-        console.error("Failed to load databases:", error);
-      }
-    };
-
-    fetchData();
+    fetch("/database/tool-database.json")
+      .then((res) => res.json())
+      .then((result) => setToolDatabase(result))
+      .catch((error) => console.error("Failed to load tool database:", error));
   }, []);
   
-function querySearch () {
-    if (!libraryDatabase.length || !toolDatabase.length || !jobDatabase.length) return;
-    const searchQuery = searchTerm.toLowerCase();
+  function querySearch() {
+    if (!libraryDatabase.length || !toolDatabase.length) return;
+    if (searchTerm === "") {
+      alert("Please input keywords")
+      return;
+    }
 
-    const filteredJobs = jobDatabase.filter((item) => {
-      return (
-        item.job.title.toLowerCase().includes(searchQuery) ||
-        item.job.keywords.some((keyword) => searchQuery.includes(keyword.toLowerCase()))
-    );
-    });
+    const searchTerms = searchTerm.toLowerCase().split(" ")
+
+    console.log("Tool Database:", toolDatabase);
+    console.log("Library Database:", libraryDatabase);
   
-    // Filter tools
     const filteredTool = toolDatabase.filter((item) => {
-      return (
-        item.tool.title.toLowerCase().includes(searchQuery) ||
-        item.tool.keywords.some((keyword) => searchQuery.includes(keyword.toLowerCase()))
-      );
-    });
+    const tool = item.tool;
+    if (!tool || !tool.keywords) return false;
+
+    const titleMatch = searchTerms.some(term => tool.title?.toLowerCase().includes(term));
+    const keywordMatch = searchTerms.some(term =>
+      tool.keywords?.some((keyword) =>
+        keyword.toLowerCase().includes(term)
+      )
+    );
+    return titleMatch || keywordMatch;
+  });
+
+  const filteredLibrary = libraryDatabase.filter((item) => {
+    const information = item.information;
+    if (!information || !information.keywords) return false;
+
+    const titleMatch = searchTerms.some(term => information.title?.toLowerCase().includes(term));
+    const keywordMatch = searchTerms.some(term =>
+      information.keywords?.some((keyword) =>
+        keyword.toLowerCase().includes(term)
+      )
+    );
+    return titleMatch || keywordMatch;
+  });
   
-    // Filter libraries
-    const filteredLibrary = libraryDatabase.filter((item) => {
-      return (
-        item.libraryBook.title.toLowerCase().includes(searchQuery) ||
-        item.libraryBook.keywords.some((keyword) => searchQuery.includes(keyword.toLowerCase()))
-      );
-    });
+    console.log("Filtered Tools:", filteredTool);
+    console.log("Filtered Library:", filteredLibrary);
   
-    setDefaultJobs(filteredJobs);
+    if (filteredTool.length === 0 && filteredLibrary.length === 0) {
+      console.warn("No matching results found");
+    }
+  
     setDefaultLibrary(filteredLibrary);
     setDefaultTool(filteredTool);
     setOpenDialog(true);
-  };
+  }
+  
+  
 
   function recommend () {
     if (portfolioDatabase.length === 0) {
@@ -107,18 +114,6 @@ function querySearch () {
 
     const { experience, disability, wants, circumstances } = userProfile;
 
-    const recommendedJobs = jobDatabase.filter((job) =>
-      (experience && job.job?.keywords.some((keyword) =>
-        experience.includes(keyword.toLowerCase())
-      )) ||
-      (wants && job.job?.keywords.some((keyword) =>
-        wants.includes(keyword.toLowerCase())
-      )) ||
-      (circumstances && job.job?.keywords.some((keyword) =>
-        circumstances.includes(keyword.toLowerCase())
-      ))
-    );
-
     const recommendedTools = toolDatabase.filter((tool) =>
       (experience && tool.tool?.keywords.some((keyword) =>
         experience.includes(keyword.toLowerCase())
@@ -129,15 +124,15 @@ function querySearch () {
     );
 
     const recommendedLibrary = libraryDatabase.filter((library) =>
-      (disability && library.library?.keywords.some((keyword) =>
+      (disability && library.libraryBook?.keywords.some((keyword) =>
         disability.includes(keyword.toLowerCase())
       )) ||
-      (circumstances && library.library?.keywords.some((keyword) =>
+      (circumstances && library.libraryBook?.keywords.some((keyword) =>
         circumstances.includes(keyword.toLowerCase())
       ))
     );
+    
 
-    setDefaultJobs(recommendedJobs);
     setDefaultLibrary(recommendedLibrary);
     setDefaultTool(recommendedTools);
 
@@ -174,9 +169,9 @@ function querySearch () {
         recognition.start();
       } else {
         setListening(false);
-        querySearch();
       }
     };
+    
   
     recognition.onerror = (event) => {
       console.error("Speech recognition error:", event.error);
@@ -221,49 +216,6 @@ function querySearch () {
           <DialogTitle>Results</DialogTitle>
         </DialogHeader>
         <DialogContent>
-          {/* Jobs Section */}
-          {defaultJobs.length > 0 ? (
-            <Table>
-              <TableHeader>
-                <TableRow>
-                  <TableHead>Job Title</TableHead>
-                  <TableHead>Type</TableHead>
-                  <TableHead>Description</TableHead>
-                  <TableHead>Tool Link</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {defaultJobs.map((jobItem, index) => {
-                  const job = jobItem.job;
-                  return (
-                    <TableRow key={index}>
-                      <TableCell>{job.title || "#"}</TableCell>
-                      <TableCell>{job.specifics?.type || "#"}</TableCell>
-                      <TableCell>
-                        <a href={job.specifics?.resources?.tutorials?.links || "#"} target="_blank" className="text-blue-500">
-                          Tutorials
-                        </a>,{" "}
-                        <a href={job.specifics?.resources?.videos?.links || "#"} target="_blank" className="text-blue-500">
-                          Videos
-                        </a>
-                      </TableCell>
-                      <TableCell>
-                        <a href={job.specifics?.Tools?.web?.links || "#"} target="_blank" className="text-blue-500">
-                          Web Tools
-                        </a>
-                      </TableCell>
-                    </TableRow>
-                  );
-                })}
-              </TableBody>
-            </Table>
-          ) : (
-            <Card>
-              <CardContent>
-                <h2>No Job Data</h2>
-              </CardContent>
-            </Card>
-          )}
 
           {/* Tools Section */}
           {defaultTool.length > 0 ? (
@@ -286,9 +238,10 @@ function querySearch () {
                       <TableCell>{tool.des || "#"}</TableCell>
                       <TableCell>
                         <a href={tool.link || "#"} target="_blank" className="text-blue-500">
-                          Web Tools
+                          Link
                         </a>
                       </TableCell>
+                      <TableCell> {tool.severityMatch} </TableCell>
                     </TableRow>
                   );
                 })}
@@ -315,17 +268,18 @@ function querySearch () {
               </TableHeader>
               <TableBody>
                 {defaultLibrary.map((libraryItem, index) => {
-                  const libraryBook = libraryItem.libraryBook;
+                  const information = libraryItem.information;
                   return (
                     <TableRow key={index}>
-                      <TableCell>{libraryBook.title || "#"}</TableCell>
-                      <TableCell>{libraryBook.type || "#"}</TableCell>
-                      <TableCell>{libraryBook.des || "#"}</TableCell>
+                      <TableCell>{information.title || "#"}</TableCell>
+                      <TableCell>{information.type || "#"}</TableCell>
+                      <TableCell>{information.des || "#"}</TableCell>
                       <TableCell>
-                        <a href={libraryBook.link || "#"} target="_blank" className="text-blue-500">
-                          Web Information
+                        <a href={information.link || "#"} target="_blank" className="text-blue-500">
+                          Link
                         </a>
                       </TableCell>
+                      <TableCell> {information.severityMatch} </TableCell>
                     </TableRow>
                   );
                 })}
