@@ -19,30 +19,30 @@ import { ModeToggle } from "./styleModes"
 const components = [
     {
         title: "Colorblind Mode",
-        href: "/",
+        href: "/layoutPage/homeLayout",
         description:
         "High contrast mode for good readbility and colorblind",
     },
     {
         title: "Job Find",
-        href: "/",
+        href: "/layoutPage/jobFindLayout",
         description:
         "Search and find jobs from your needs to wants",
     },
     {
         title: "Resource Hub",
-        href: "/",
+        href: "/layoutPage/resourceHubLayout",
         description:
         "Find tools and information for your current needs!",
     },
     {
         title: "Text to Speech",
-        href: "/",
+        href: "/layoutPage/homeLayout",
         description: "TTS to accomadate readiblity",
     },
     {
         title: "Speech to text",
-        href: "/",
+        href: "/layoutPage/homeLayout",
         description:
         "STT for no hands searching or browsing",
     },
@@ -53,7 +53,7 @@ export default function NavigationMenuDemo() {
     <NavigationMenu>
       <NavigationMenuList>
       <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
+          <Link href="/layoutPage/homeLayout" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Home
             </NavigationMenuLink>
@@ -113,8 +113,8 @@ export default function NavigationMenuDemo() {
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-        <NavigationMenuItem className="z-[9999]">
-          <ModeToggle />
+        <NavigationMenuItem className="relative z-[50]">
+          <ModeToggle className="absolute top-full left-0 z-[9999]"/>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>

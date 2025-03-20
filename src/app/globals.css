@@ -8,6 +8,11 @@
   scroll-behavior: smooth;
 }
 
+html, body {
+  overflow: visible !important;
+}
+
+
 body {
   font-family: var(--font-sans), sans-serif;
 }

@@ -14,6 +14,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Progress } from "@/components/ui/progress";
+import Link from "next/link";
 
 export default function SignupPage() {
   const [step, setStep] = useState(1);
@@ -190,7 +191,9 @@ export default function SignupPage() {
           </Button>
         ) : (
           <Button type="submit" className="w-1/3" onClick={handleSubmit}>
-            Complete
+            <Link href={"/layoutPage/homeLayout"}>
+              Complete
+            </Link>
           </Button>
         )}
       </CardFooter>

@@ -35,18 +35,18 @@ import {
 
 const data = {
   user: {
-    name: "shadcn",
-    email: "m@example.com",
+    name: "kaede_123",
+    email: "kaed@gmail.com",
     avatar: "/avatars/shadcn.jpg",
   },
   navMain: [
     {
-      title: "Dashboard",
+      title: "Home",
       url: "#",
       icon: LayoutDashboardIcon,
     },
     {
-      title: "Lifecycle",
+      title: "Info",
       url: "#",
       icon: ListIcon,
     },
@@ -61,7 +61,7 @@ const data = {
       icon: FolderIcon,
     },
     {
-      title: "Team",
+      title: "About",
       url: "#",
       icon: UsersIcon,
     },
@@ -133,7 +133,7 @@ const data = {
   ],
   documents: [
     {
-      name: "Data Library",
+      name: "Data",
       url: "#",
       icon: DatabaseIcon,
     },

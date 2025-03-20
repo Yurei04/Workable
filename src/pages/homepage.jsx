@@ -99,7 +99,7 @@ export default  function Homepage () {
                     </CardHeader>
                     <CardContent className="items-center flex gap-2">
                         <Button>
-                            <Link href={"/"}>Lets Go!</Link>
+                            <Link href={"/layoutPage/jobFindLayout"}>Lets Go!</Link>
                         </Button>
                         <Dialog>
                         <DialogTrigger asChild>
@@ -135,7 +135,7 @@ export default  function Homepage () {
                     </CardHeader>
                     <CardContent className="items-center flex gap-2">
                         <Button >
-                            <Link href={"/"}>
+                            <Link href={"/layoutPage/resourceHubLayout"}>
                             Lets Go!
                             </Link>
 

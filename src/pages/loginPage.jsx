@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import Link from "next/link";
 
 export default function LoginForm({ className, ...props }) {
   return (
@@ -14,7 +15,7 @@ export default function LoginForm({ className, ...props }) {
               <div className="flex flex-col items-center text-center">
                 <h1 className="text-2xl font-bold">Welcome back</h1>
                 <p className="text-balance text-muted-foreground">
-                  Login to your Acme Inc account
+                  Login to your Workable account
                 </p>
               </div>
               <div className="grid gap-2">
@@ -39,7 +40,9 @@ export default function LoginForm({ className, ...props }) {
                 <Input id="password" type="password" required />
               </div>
               <Button type="submit" className="w-full">
-                Login
+              <Link href={"/layoutPage/homeLayout"}>
+              Login
+              </Link>
               </Button>
               <div className="relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-border">
                 <span className="relative z-10 bg-background px-2 text-muted-foreground">
@@ -82,7 +85,7 @@ export default function LoginForm({ className, ...props }) {
               </div>
               <div className="text-center text-sm">
                 Don't have an account?{" "}
-                <a href="#" className="underline underline-offset-4">
+                <a href="/layoutPage/signupPageLayout" className="underline underline-offset-4">
                   Sign up
                 </a>
               </div>
