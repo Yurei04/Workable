@@ -21,30 +21,30 @@ const components = [
         title: "Colorblind Mode",
         href: "/",
         description:
-        "",
+        "High contrast mode for good readbility and colorblind",
     },
     {
-        title: "Job Seeker",
+        title: "Job Find",
         href: "/",
         description:
-        "",
+        "Search and find jobs from your needs to wants",
     },
     {
         title: "Resource Hub",
         href: "/",
         description:
-        "",
+        "Find tools and information for your current needs!",
     },
     {
         title: "Text to Speech",
         href: "/",
-        description: "",
+        description: "TTS to accomadate readiblity",
     },
     {
         title: "Speech to text",
         href: "/",
         description:
-        "",
+        "STT for no hands searching or browsing",
     },
 ];
 

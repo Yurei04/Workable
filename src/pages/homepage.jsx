@@ -31,7 +31,7 @@ import Link from "next/link";
 export default  function Homepage () {
 
   return (
-    <div className="lg:py-22 py-20 items-center">
+    <div className="lg:py-5 items-center flex flex-col">
         <div className="grid grid-cols-1 sm:grid-cols-12 gap-8 items-center bg-opacity-80">
             <motion.div
                 initial={{ opacity: 0, scale: 0.5 }}
@@ -90,7 +90,8 @@ export default  function Homepage () {
         </motion.div>
     </div>
     <br />
-    <div className="items-center justify-center grid grid-cols-1 grid-rows-1 gap-4 sm:grid-cols-3 grid-rows-auto mt-5">
+    <div className="flex gap-2 justify-start flex-wrap">
+
                 <Card className="w-[350px]">
                     <CardHeader>
                         <CardTitle>Job Find</CardTitle>
