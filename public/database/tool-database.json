@@ -75,6 +75,95 @@
             "link": "https://www.medscape.com/",
             "severityMatch": 10
         }
+    },
+    {
+        "tool": {
+            "title": "Canva",
+            "type": "Design Tool",
+            "keywords": ["graphic design", "branding", "illustration"],
+            "des": "A design platform for creating stunning graphics.",
+            "link": "https://www.canva.com/",
+            "severityMatch": 7
+        }
+    },
+    {
+        "tool": {
+            "title": "SolidWorks",
+            "type": "Engineering Software",
+            "keywords": ["mechanical design", "CAD", "engineering"],
+            "des": "A CAD software for designing mechanical components.",
+            "link": "https://www.solidworks.com/",
+            "severityMatch": 8
+        }
+    },
+    {
+        "tool": {
+            "title": "ChefSteps",
+            "type": "Culinary Resource",
+            "keywords": ["cooking", "culinary", "recipes"],
+            "des": "A platform for learning advanced cooking techniques.",
+            "link": "https://www.chefsteps.com/",
+            "severityMatch": 6
+        }
+    },
+    {
+        "tool": {
+            "title": "Jupyter Notebook",
+            "type": "Data Science Tool",
+            "keywords": ["data analysis", "machine learning", "python"],
+            "des": "An interactive environment for coding and data visualization.",
+            "link": "https://jupyter.org/",
+            "severityMatch": 9
+        }
+    },
+    {
+        "tool": {
+            "title": "Fluke Multimeter",
+            "type": "Electrical Tool",
+            "keywords": ["voltage", "current", "resistance"],
+            "des": "A tool for measuring voltage, current, and resistance.",
+            "link": "https://www.fluke.com/",
+            "severityMatch": 8
+        }
+    },
+    {
+        "tool": {
+            "title": "Firefighter Gear",
+            "type": "Safety Equipment",
+            "keywords": ["firefighting", "protection", "emergency response"],
+            "des": "Protective equipment used by firefighters.",
+            "link": "https://www.nfpa.org/",
+            "severityMatch": 9
+        }
+    },
+    {
+        "tool": {
+            "title": "Google Analytics",
+            "type": "Marketing Tool",
+            "keywords": ["SEO", "advertising", "data analysis"],
+            "des": "A tool for tracking website traffic and user behavior.",
+            "link": "https://analytics.google.com/",
+            "severityMatch": 7
+        }
+    },
+    {
+        "tool": {
+            "title": "Pipe Wrench",
+            "type": "Plumbing Tool",
+            "keywords": ["pipe fitting", "repair", "installation"],
+            "des": "A tool for gripping and turning pipes.",
+            "link": "https://www.ridgid.com/",
+            "severityMatch": 8
+        }
+    },
+    {
+        "tool": {
+            "title": "Veterinary Ultrasound",
+            "type": "Medical Diagnostic Tool",
+            "keywords": ["veterinary", "diagnosis", "ultrasound"],
+            "des": "A diagnostic tool for examining animals.",
+            "link": "https://www.sonopath.com/",
+            "severityMatch": 9
+        }
     }
 ]
-    

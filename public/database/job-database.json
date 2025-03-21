@@ -166,5 +166,453 @@
                 }
             }
         }
+    },
+    {
+        "job": {
+            "title": "Cybersecurity Analyst",
+            "keywords": ["security", "network", "threats", "analysis", "protection"],
+            "type": "full-time",
+            "des": "A cybersecurity analyst protects systems and networks from cyber threats and attacks.",
+            "image": "",
+            "applyLink": "https://company.com/apply-cybersecurity",
+            "requirements": ["Penetration Testing", "Firewalls", "Ethical Hacking", "Incident Response"],
+            "qualifications": [
+                "Experience with cybersecurity tools like Wireshark and Metasploit",
+                "Understanding of network security",
+                "Ability to assess and mitigate security risks"
+            ],
+            "resources": {
+                "tool": {
+                    "title": "Kali Linux",
+                    "des": "A penetration testing platform used for cybersecurity analysis.",
+                    "link": "https://www.kali.org/"
+                },
+                "information": {
+                    "title": "OWASP",
+                    "des": "A global nonprofit organization focused on improving software security.",
+                    "link": "https://owasp.org/"
+                }
+            }
+        }
+    },
+    {
+        "job": {
+            "title": "Biotechnologist",
+            "keywords": ["biology", "research", "lab", "genetics", "pharmaceuticals"],
+            "type": "full-time",
+            "des": "A biotechnologist applies biological principles to develop new products and solutions in healthcare and agriculture.",
+            "image": "",
+            "applyLink": "https://company.com/apply-biotech",
+            "requirements": ["Genetics", "Biochemistry", "Lab Experience", "Analytical Thinking"],
+            "qualifications": [
+                "Degree in Biotechnology or related field",
+                "Experience with lab equipment and research methods",
+                "Strong problem-solving skills"
+            ],
+            "resources": {
+                "tool": {
+                    "title": "PCR Machine",
+                    "des": "A tool used for amplifying DNA sequences in genetic research.",
+                    "link": "https://www.thermofisher.com/"
+                },
+                "information": {
+                    "title": "Biotechnology Journal",
+                    "des": "A scientific journal covering the latest research in biotechnology.",
+                    "link": "https://www.nature.com/nbt/"
+                }
+            }
+        }
+    },
+    {
+        "job": {
+            "title": "Video Game Tester",
+            "keywords": ["gaming", "testing", "bug fixing", "quality assurance"],
+            "type": "contract",
+            "des": "A video game tester plays and evaluates video games to find and report bugs.",
+            "image": "",
+            "applyLink": "https://company.com/apply-gametest",
+            "requirements": ["Attention to Detail", "Gaming Knowledge", "Bug Reporting", "Problem-Solving"],
+            "qualifications": [
+                "Experience playing various game genres",
+                "Ability to document and report game bugs",
+                "Understanding of game mechanics and usability"
+            ],
+            "resources": {
+                "tool": {
+                    "title": "JIRA",
+                    "des": "A project management tool used for bug tracking in game development.",
+                    "link": "https://www.atlassian.com/software/jira"
+                },
+                "information": {
+                    "title": "GDC Vault",
+                    "des": "A resource for video game development insights and industry trends.",
+                    "link": "https://www.gdcvault.com/"
+                }
+            }
+        }
+    },
+    {
+        "job": {
+            "title": "Supply Chain Manager",
+            "keywords": ["logistics", "operations", "inventory", "planning"],
+            "type": "full-time",
+            "des": "A supply chain manager oversees and optimizes supply chain processes and logistics.",
+            "image": "",
+            "applyLink": "https://company.com/apply-scm",
+            "requirements": ["Inventory Management", "Procurement", "Data Analysis", "Strategic Planning"],
+            "qualifications": [
+                "Experience in logistics and supply chain management",
+                "Strong data analysis skills",
+                "Ability to manage supplier relationships"
+            ],
+            "resources": {
+                "tool": {
+                    "title": "SAP ERP",
+                    "des": "An enterprise resource planning tool used for supply chain management.",
+                    "link": "https://www.sap.com/products/erp.html"
+                },
+                "information": {
+                    "title": "Logistics Management Guide",
+                    "des": "An industry guide on best practices for logistics and supply chain management.",
+                    "link": "https://www.inboundlogistics.com/"
+                }
+            }
+        }
+    },
+    {
+        "job": {
+            "title": "Event Planner",
+            "keywords": ["events", "coordination", "budgeting", "scheduling"],
+            "type": "freelance",
+            "des": "An event planner organizes and manages events, ensuring all logistics are handled efficiently.",
+            "image": "",
+            "applyLink": "https://company.com/apply-eventplanner",
+            "requirements": ["Organizational Skills", "Negotiation", "Creativity", "Time Management"],
+            "qualifications": [
+                "Experience in event planning or hospitality management",
+                "Ability to handle multiple tasks under pressure",
+                "Strong budgeting and negotiation skills"
+            ],
+            "resources": {
+                "tool": {
+                    "title": "Eventbrite",
+                    "des": "A platform for event planning and ticketing management.",
+                    "link": "https://www.eventbrite.com/"
+                },
+                "information": {
+                    "title": "Event Planning Guide",
+                    "des": "A guide on how to plan and manage successful events.",
+                    "link": "https://www.eventmanagerblog.com/"
+                }
+            }
+        }
+    },
+    {
+        "job": {
+            "title": "Solar Panel Technician",
+            "keywords": ["solar", "renewable energy", "installation", "maintenance"],
+            "type": "full-time",
+            "des": "A solar panel technician installs and maintains solar energy systems.",
+            "image": "",
+            "applyLink": "https://company.com/apply-solartech",
+            "requirements": ["Electrical Wiring", "Safety Compliance", "Problem-Solving"],
+            "qualifications": [
+                "Knowledge of solar power systems and electrical installations",
+                "Ability to work at heights and handle heavy equipment",
+                "Certification in solar panel installation (preferred)"
+            ],
+            "resources": {
+                "tool": {
+                    "title": "Solar Pathfinder",
+                    "des": "A tool used to analyze optimal solar panel placement.",
+                    "link": "https://www.solarpathfinder.com/"
+                },
+                "information": {
+                    "title": "Solar Energy Handbook",
+                    "des": "A comprehensive resource on solar energy systems and installation techniques.",
+                    "link": "https://www.seia.org/"
+                }
+            }
+        }
+    },
+    {
+        "job": {
+            "title": "Wine Sommelier",
+            "keywords": ["wine", "tasting", "hospitality", "pairing"],
+            "type": "full-time",
+            "des": "A wine sommelier is a trained wine expert who recommends wine pairings and curates wine selections.",
+            "image": "",
+            "applyLink": "https://company.com/apply-sommelier",
+            "requirements": ["Wine Knowledge", "Customer Service", "Tasting Expertise", "Presentation Skills"],
+            "qualifications": [
+                "Certification in wine studies (WSET, CMS, or equivalent)",
+                "Experience in hospitality or fine dining",
+                "Ability to educate and engage customers about wine"
+            ],
+            "resources": {
+                "tool": {
+                    "title": "Vivino",
+                    "des": "A mobile app for discovering and reviewing wines.",
+                    "link": "https://www.vivino.com/"
+                },
+                "information": {
+                    "title": "Wine Spectator",
+                    "des": "A resource covering wine ratings, reviews, and industry trends.",
+                    "link": "https://www.winespectator.com/"
+                }
+            }
+        }
+    },
+    {
+        "job": {
+            "title": "Electrician",
+            "keywords": ["Wiring", "Repair", "Construction", "Electrical Systems"],
+            "type": "Full-time",
+            "des": "An electrician installs and repairs electrical systems in homes and buildings.",
+            "image": "",
+            "applyLink": "https://www.indeed.com/q-electrician-jobs.html",
+            "requirements": ["Electrical Certification", "Problem-solving", "Safety Knowledge"],
+            "qualifications": [
+                "Licensed electrician",
+                "Experience with electrical wiring and repairs",
+                "Strong knowledge of safety regulations"
+            ],
+            "resources": {
+                "tool": {
+                    "title": "Fluke Multimeter",
+                    "des": "A tool for measuring voltage, current, and resistance.",
+                    "link": "https://www.fluke.com/"
+                },
+                "information": {
+                    "title": "Electrician Training Guide",
+                    "des": "A guide to becoming a professional electrician.",
+                    "link": "https://www.necanet.org/"
+                }
+            }
+        }
+    },
+    {
+        "job": {
+            "title": "Firefighter",
+            "keywords": ["Emergency", "Rescue", "Safety", "Fire Prevention"],
+            "type": "Full-time",
+            "des": "A firefighter responds to emergencies, extinguishes fires, and rescues people.",
+            "image": "",
+            "applyLink": "https://nationaltestingnetwork.com/publicsafetyjobs/search.cfm?position=2",
+            "requirements": ["Fire Academy Training", "Physical Fitness", "Emergency Response"],
+            "qualifications": [
+                "Certified firefighter",
+                "Strong teamwork and problem-solving skills",
+                "Knowledge of fire prevention methods"
+            ],
+            "resources": {
+                "tool": {
+                    "title": "Firefighter Gear",
+                    "des": "Protective equipment used by firefighters.",
+                    "link": "https://www.nfpa.org/"
+                },
+                "information": {
+                    "title": "Fire Safety Guide",
+                    "des": "A guide to fire prevention and emergency response.",
+                    "link": "https://www.usfa.fema.gov/"
+                }
+            }
+        }
+    },
+    {
+        "job": {
+            "title": "Digital Marketer",
+            "keywords": ["SEO", "Advertising", "Social Media", "Content Marketing"],
+            "type": "Remote",
+            "des": "A digital marketer develops online strategies to promote businesses and products.",
+            "image": "",
+            "applyLink": "https://www.indeed.com/q-digital-marketer-jobs.html",
+            "requirements": ["SEO", "Google Ads", "Content Creation", "Data Analysis"],
+            "qualifications": [
+                "Experience in social media marketing",
+                "Strong understanding of online advertising",
+                "Proficiency in marketing analytics tools"
+            ],
+            "resources": {
+                "tool": {
+                    "title": "Google Analytics",
+                    "des": "A tool for tracking website traffic and user behavior.",
+                    "link": "https://analytics.google.com/"
+                },
+                "information": {
+                    "title": "Marketing Strategies Guide",
+                    "des": "A resource for digital marketing techniques.",
+                    "link": "https://moz.com/"
+                }
+            }
+        }
+    },
+    {
+        "job": {
+            "title": "Plumber",
+            "keywords": ["Pipes", "Water Systems", "Repair", "Construction"],
+            "type": "Full-time",
+            "des": "A plumber installs and repairs water and drainage systems.",
+            "image": "",
+            "applyLink": "https://www.indeed.com/q-plumber-jobs.html",
+            "requirements": ["Plumbing Certification", "Problem-solving", "Technical Skills"],
+            "qualifications": [
+                "Licensed plumber",
+                "Experience with pipe installation",
+                "Strong troubleshooting skills"
+            ],
+            "resources": {
+                "tool": {
+                    "title": "Pipe Wrench",
+                    "des": "A tool for gripping and turning pipes.",
+                    "link": "https://www.ridgid.com/"
+                },
+                "information": {
+                    "title": "Plumbing Guide",
+                    "des": "A resource for learning plumbing skills and techniques.",
+                    "link": "https://www.plumbingzone.com/"
+                }
+            }
+        }
+    },
+    {
+        "job": {
+            "title": "Veterinarian",
+            "keywords": ["Animals", "Healthcare", "Surgery", "Diagnosis"],
+            "type": "Full-time",
+            "des": "A veterinarian diagnoses and treats medical conditions in animals.",
+            "image": "",
+            "applyLink": "https://www.indeed.com/q-veterinarian-jobs.html",
+            "requirements": ["Veterinary Degree", "Animal Care Knowledge", "Surgical Skills"],
+            "qualifications": [
+                "Licensed veterinarian",
+                "Experience in diagnosing and treating animals",
+                "Strong communication skills"
+            ],
+            "resources": {
+                "tool": {
+                    "title": "Veterinary Ultrasound",
+                    "des": "A diagnostic tool for examining animals.",
+                    "link": "https://www.sonopath.com/"
+                },
+                "information": {
+                    "title": "Animal Health Guide",
+                    "des": "A comprehensive guide to veterinary medicine.",
+                    "link": "https://www.avma.org/"
+                }
+            }
+        }
+    },
+    {
+        "job": {
+            "title": "Graphic Designer",
+            "keywords": ["Design", "Creativity", "Branding", "Illustration"],
+            "type": "Remote",
+            "des": "A graphic designer creates visual content to communicate messages.",
+            "image": "",
+            "applyLink": "https://www.indeed.com/q-remote-graphic-designer-jobs.html",
+            "requirements": ["Adobe Suite", "Creative thinking", "Branding knowledge"],
+            "qualifications": [
+                "Experience with Photoshop and Illustrator",
+                "Ability to create branding materials",
+                "Strong artistic and visual communication skills"
+            ],
+            "resources": {
+                "tool": {
+                    "title": "Canva",
+                    "des": "A design platform for creating stunning graphics.",
+                    "link": "https://www.canva.com/"
+                },
+                "information": {
+                    "title": "Graphic Design Principles",
+                    "des": "A guide to mastering the basics of design.",
+                    "link": "https://www.smashingmagazine.com/"
+                }
+            }
+        }
+    },
+    {
+        "job": {
+            "title": "Mechanical Engineer",
+            "keywords": ["Engineering", "Design", "Manufacturing", "Mechanical Systems"],
+            "type": "Full-time",
+            "des": "A mechanical engineer designs, tests, and improves mechanical systems.",
+            "image": "",
+            "applyLink": "https://www.indeed.com/q-mechanical-engineer-jobs.html",
+            "requirements": ["Mechanical Engineering degree", "CAD software experience", "Problem-solving"],
+            "qualifications": [
+                "Licensed mechanical engineer",
+                "Experience in CAD software",
+                "Strong analytical skills"
+            ],
+            "resources": {
+                "tool": {
+                    "title": "SolidWorks",
+                    "des": "A CAD software for designing mechanical components.",
+                    "link": "https://www.solidworks.com/"
+                },
+                "information": {
+                    "title": "Engineering Design Guide",
+                    "des": "A resource on mechanical engineering principles and practices.",
+                    "link": "https://www.asme.org/"
+                }
+            }
+        }
+    },
+    {
+        "job": {
+            "title": "Chef",
+            "keywords": ["Cooking", "Food Preparation", "Culinary Skills", "Creativity"],
+            "type": "Full-time",
+            "des": "A chef creates and prepares meals, develops recipes, and manages kitchen operations.",
+            "image": "",
+            "applyLink": "https://www.indeed.com/q-chef-jobs.html",
+            "requirements": ["Culinary degree", "Cooking experience", "Creativity"],
+            "qualifications": [
+                "Experience in professional kitchens",
+                "Ability to create unique dishes",
+                "Strong knowledge of food safety standards"
+            ],
+            "resources": {
+                "tool": {
+                    "title": "ChefSteps",
+                    "des": "A platform for learning advanced cooking techniques.",
+                    "link": "https://www.chefsteps.com/"
+                },
+                "information": {
+                    "title": "Culinary Arts Guide",
+                    "des": "A comprehensive guide to culinary techniques and kitchen management.",
+                    "link": "https://www.foodnetwork.com/"
+                }
+            }
+        }
+    },
+    {
+        "job": {
+            "title": "Data Scientist",
+            "keywords": ["Data Analysis", "Machine Learning", "Big Data", "Python"],
+            "type": "Remote",
+            "des": "A data scientist analyzes complex data sets to provide business insights.",
+            "image": "",
+            "applyLink": "https://www.indeed.com/q-data-scientist-jobs.html",
+            "requirements": ["Python", "SQL", "Statistics", "Machine Learning"],
+            "qualifications": [
+                "Experience with data visualization",
+                "Proficient in Python and SQL",
+                "Strong problem-solving skills"
+            ],
+            "resources": {
+                "tool": {
+                    "title": "Jupyter Notebook",
+                    "des": "An interactive environment for coding and data visualization.",
+                    "link": "https://jupyter.org/"
+                },
+                "information": {
+                    "title": "Data Science Handbook",
+                    "des": "A guide to data science techniques and best practices.",
+                    "link": "https://datasciencehandbook.net/"
+                }
+            }
+        }
     }
 ]

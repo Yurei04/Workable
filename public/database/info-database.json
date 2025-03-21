@@ -68,5 +68,95 @@
             "link": "https://www.nursingworld.org/",
             "severityMatch": 10
         }
+    },
+    {
+        "information": {
+            "title": "Graphic Design Principles",
+            "type": "Guide",
+            "keywords": ["design", "branding", "visual communication"],
+            "des": "A guide to mastering the basics of design.",
+            "link": "https://www.smashingmagazine.com/",
+            "severityMatch": 7
+        }
+    },
+    {
+        "information": {
+            "title": "Engineering Design Guide",
+            "type": "Resource",
+            "keywords": ["mechanical engineering", "CAD", "design principles"],
+            "des": "A resource on mechanical engineering principles and practices.",
+            "link": "https://www.asme.org/",
+            "severityMatch": 8
+        }
+    },
+    {
+        "information": {
+            "title": "Culinary Arts Guide",
+            "type": "Educational Resource",
+            "keywords": ["cooking", "food safety", "kitchen management"],
+            "des": "A comprehensive guide to culinary techniques and kitchen management.",
+            "link": "https://www.foodnetwork.com/",
+            "severityMatch": 6
+        }
+    },
+    {
+        "information": {
+            "title": "Data Science Handbook",
+            "type": "Book",
+            "keywords": ["data analysis", "statistics", "machine learning"],
+            "des": "A guide to data science techniques and best practices.",
+            "link": "https://datasciencehandbook.net/",
+            "severityMatch": 9
+        }
+    },
+    {
+        "information": {
+            "title": "Electrician Training Guide",
+            "type": "Training Resource",
+            "keywords": ["electrical work", "wiring", "certification"],
+            "des": "A guide to becoming a professional electrician.",
+            "link": "https://www.necanet.org/",
+            "severityMatch": 8
+        }
+    },
+    {
+        "information": {
+            "title": "Fire Safety Guide",
+            "type": "Emergency Preparedness Guide",
+            "keywords": ["fire prevention", "rescue", "emergency response"],
+            "des": "A guide to fire prevention and emergency response.",
+            "link": "https://www.usfa.fema.gov/",
+            "severityMatch": 9
+        }
+    },
+    {
+        "information": {
+            "title": "Marketing Strategies Guide",
+            "type": "Business Resource",
+            "keywords": ["digital marketing", "content marketing", "advertising"],
+            "des": "A resource for digital marketing techniques.",
+            "link": "https://moz.com/",
+            "severityMatch": 7
+        }
+    },
+    {
+        "information": {
+            "title": "Plumbing Guide",
+            "type": "Educational Resource",
+            "keywords": ["pipe installation", "repair", "water systems"],
+            "des": "A resource for learning plumbing skills and techniques.",
+            "link": "https://www.plumbingzone.com/",
+            "severityMatch": 8
+        }
+    },
+    {
+        "information": {
+            "title": "Animal Health Guide",
+            "type": "Veterinary Resource",
+            "keywords": ["animal care", "medical treatment", "veterinary"],
+            "des": "A comprehensive guide to veterinary medicine.",
+            "link": "https://www.avma.org/",
+            "severityMatch": 9
+        }
     }
 ]
