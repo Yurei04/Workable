@@ -8,7 +8,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 
 export default function JobLayoutRoute () {
     return (
-        <div className="w-full items-center justify-items-center">
+        <div className="flex flex-col items-center py-5 px-4 md:px-8 lg:px-16">
             <ThemeProvider
             attribute="class"
             defaultTheme="dark"

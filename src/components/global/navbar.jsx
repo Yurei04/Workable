@@ -14,8 +14,6 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
-import { ModeToggle } from "./styleModes"
-
 const components = [
     {
         title: "Colorblind Mode",
@@ -50,7 +48,7 @@ const components = [
 
 export default function NavigationMenuDemo() {
   return (
-    <NavigationMenu>
+    <NavigationMenu >
       <NavigationMenuList>
       <NavigationMenuItem>
           <Link href="/layoutPage/homeLayout" legacyBehavior passHref>
@@ -112,9 +110,6 @@ export default function NavigationMenuDemo() {
               Github
             </NavigationMenuLink>
           </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem className="relative z-[50]">
-          <ModeToggle className="absolute top-full left-0 z-[9999]"/>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>

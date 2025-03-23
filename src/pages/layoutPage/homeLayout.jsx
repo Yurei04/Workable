@@ -8,7 +8,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 
 export default function HomeLayout () {
     return (
-        <div className="justify-items-center align-center h-lvh w-full">
+        <div className="flex flex-col items-center py-5 px-4 md:px-8 lg:px-16">
             <ThemeProvider
             attribute="class"
             defaultTheme="dark"

@@ -123,13 +123,13 @@ export default function ResourceHubTable() {
         />
 
         {/* Type Filter */}
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
+        <DropdownMenu >
+          <DropdownMenuTrigger asChild >
             <Button variant="outline">
               {selectedType || "Filter by Type"}
             </Button>
           </DropdownMenuTrigger>
-          <DropdownMenuContent>
+          <DropdownMenuContent className="absolute top-[18rem] left-[85rem] ">
             {activeTab === "library" ? (
               <>
                 <DropdownMenuItem onClick={() => setSelectedType(null)}>
