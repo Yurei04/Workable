@@ -11,13 +11,6 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import {
-  DropdownMenu,
-  DropdownMenuTrigger,
-  DropdownMenuContent,
-  DropdownMenuItem,
-} from "@/components/ui/dropdown-menu";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import {
   Pagination,
@@ -36,6 +29,8 @@ import {
   DialogDescription,
   DialogClose,
 } from "@/components/ui/dialog";
+
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 const ITEMS_PER_PAGE = 7;
 
@@ -109,31 +104,18 @@ export default function JobFindTableBack() {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
 
-        {/* Job Type Dropdown */}
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant="outline">
-              {selectedType || "Filter by Type"}
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent>
-            <DropdownMenuItem onClick={() => setSelectedType(null)}>
-              All
-            </DropdownMenuItem>
-            <DropdownMenuItem onClick={() => setSelectedType("Full-time")}>
-              Full-time
-            </DropdownMenuItem>
-            <DropdownMenuItem onClick={() => setSelectedType("Part-time")}>
-              Part-time
-            </DropdownMenuItem>
-            <DropdownMenuItem onClick={() => setSelectedType("Onsite")}>
-              Onsite
-            </DropdownMenuItem>
-            <DropdownMenuItem onClick={() => setSelectedType("Remote")}>
-              Remote
-            </DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
+      <Select onValueChange={(value) => setSelectedType(value === "all" ? null : value)}>
+        <SelectTrigger className="w-[12rem]">
+          <SelectValue placeholder={selectedType || "Filter by Type"} />
+        </SelectTrigger>
+        <SelectContent>
+          <SelectItem value="all">All</SelectItem>
+          <SelectItem value="Full-time">Full-time</SelectItem>
+          <SelectItem value="Part-time">Part-time</SelectItem>
+          <SelectItem value="Onsite">Onsite</SelectItem>
+          <SelectItem value="Remote">Remote</SelectItem>
+        </SelectContent>
+      </Select>
       </div>
 
       {/* Job Table */}

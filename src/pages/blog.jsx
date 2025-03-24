@@ -28,7 +28,7 @@ export default function Blog({ className, ...props }) {
   ]
   
   return (
-    <div className="w-full items-center text-center justify-center">
+    <div className="w-full items-center text-center justify-center mt-16" id="blog">
       <h1 className="text-4xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-white m-2">
         Blogs
       </h1>
@@ -62,9 +62,10 @@ export default function Blog({ className, ...props }) {
         </CarouselContent>
       </Carousel>
 
-      <div className="flex items-center justify-center">
+      <div className="items-center justify-center">
         <CardBlog />
       </div>
+
     </div>
   )
 }
