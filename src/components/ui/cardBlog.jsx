@@ -88,19 +88,11 @@ export default function App() {
   ];
 
   return (
-    <div className="flex flex-row justify-between gap-2.5">
-      <CardBlog
-        notifications={data1}
-        image="/images/temp.jpg"
-      />
-      <CardBlog
-        notifications={data2}
-        image="/images/temp.jpg"
-      />
-      <CardBlog
-        notifications={data3}
-        image="/images/temp.jpg"
-      />
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5 justify-center items-center">
+      <CardBlog notifications={data1} image="/images/temp.jpg" />
+      <CardBlog notifications={data2} image="/images/temp.jpg" />
+      <CardBlog notifications={data3} image="/images/temp.jpg" />
     </div>
   );
+  
 }

@@ -4,6 +4,7 @@ import AppSidebar from "@/components/global/app-sidebar";
 import SiteHeader from "@/components/global/site-header";
 import "@/app/globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
+import Blog from "../blog";
 
 
 export default function HomeLayout () {
@@ -19,6 +20,7 @@ export default function HomeLayout () {
                 <SiteHeader />
 
                 <Homepage />
+                <Blog />
                 
             </SidebarInset>
             </SidebarProvider>

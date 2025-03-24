@@ -11,12 +11,9 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import {
-  DropdownMenu,
-  DropdownMenuTrigger,
-  DropdownMenuContent,
-  DropdownMenuItem,
-} from "@/components/ui/dropdown-menu";
+
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   Pagination,
@@ -63,6 +60,7 @@ export default function ResourceHubTable() {
 
   // Filter data based on active tab, search term, and type
   useEffect(() => {
+    setSearchTerm("");
     let data = activeTab === "library" ? libraryData : toolData;
 
     let filtered = data.filter((item) => {
@@ -75,7 +73,7 @@ export default function ResourceHubTable() {
       );
     });
 
-    if (selectedType) {
+    if (selectedType && selectedType !== "all")  {
       filtered = filtered.filter((item) => {
         const resource = activeTab === "library" ? item.information : item.tool;
         return resource.type === selectedType;
@@ -108,7 +106,7 @@ export default function ResourceHubTable() {
           <TabsTrigger value="library" onClick={() => setActiveTab("library")}>
             Library
           </TabsTrigger>
-          <TabsTrigger value="tools" onClick={() => setActiveTab("tool")}>
+          <TabsTrigger value="tools" onClick={() => setActiveTab("tools")}>
             Tools
           </TabsTrigger>
         </TabsList>
@@ -122,47 +120,29 @@ export default function ResourceHubTable() {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
 
-        {/* Type Filter */}
-        <DropdownMenu >
-          <DropdownMenuTrigger asChild >
-            <Button variant="outline">
-              {selectedType || "Filter by Type"}
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent className="absolute top-[18rem] left-[85rem] ">
+      <Select onValueChange={(value) => setSelectedType(value)} value={selectedType || ""}>
+          <SelectTrigger className="w-[200px]">
+            <SelectValue placeholder="Filter by Type" />
+          </SelectTrigger>
+
+          <SelectContent>
             {activeTab === "library" ? (
               <>
-                <DropdownMenuItem onClick={() => setSelectedType(null)}>
-                  All
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setSelectedType("PDF")}>
-                  PDF
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setSelectedType("Article")}>
-                  Article
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setSelectedType("Research")}>
-                  Research
-                </DropdownMenuItem>
+                <SelectItem value="all">All</SelectItem>
+                <SelectItem value="PDF">PDF</SelectItem>
+                <SelectItem value="Article">Article</SelectItem>
+                <SelectItem value="Research">Research</SelectItem>
               </>
             ) : (
               <>
-                <DropdownMenuItem onClick={() => setSelectedType(null)}>
-                  All
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setSelectedType("App")}>
-                  App
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setSelectedType("Website")}>
-                  Website
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setSelectedType("Extension")}>
-                  Extension
-                </DropdownMenuItem>
+                <SelectItem value="all">All</SelectItem>
+                <SelectItem value="App">App</SelectItem>
+                <SelectItem value="Website">Website</SelectItem>
+                <SelectItem value="Extension">Extension</SelectItem>
               </>
             )}
-          </DropdownMenuContent>
-        </DropdownMenu>
+          </SelectContent>
+        </Select>
       </div>
 
       {/* Table */}

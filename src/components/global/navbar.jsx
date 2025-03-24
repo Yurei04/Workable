@@ -104,13 +104,7 @@ export default function NavigationMenuDemo() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="https://github.com" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Github
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
+
       </NavigationMenuList>
     </NavigationMenu>
   )
