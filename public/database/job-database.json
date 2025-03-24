@@ -614,5 +614,229 @@
                 }
             }
         }
-    }
+    },
+    {
+        "job": {
+            "title": "Waitress",
+            "keywords": ["Customer Service", "Food Service", "Hospitality", "Dining"],
+            "type": "Full-time",
+            "des": "A waitress takes orders, serves food and beverages, and provides excellent customer service.",
+            "image": "",
+            "applyLink": "https://www.indeed.com/q-waitress-jobs.html",
+            "requirements": ["Friendly demeanor", "Multitasking skills", "Ability to handle stress"],
+            "qualifications": [
+                "Experience in food service preferred",
+                "Strong communication skills",
+                "Ability to work flexible hours"
+            ],
+            "resources": {
+                "tool": {
+                    "title": "POS System",
+                    "des": "A digital point-of-sale system for handling orders and payments.",
+                    "link": "https://www.squarespace.com/pos"
+                },
+                "information": {
+                    "title": "Customer Service Guide",
+                    "des": "A resource on providing excellent customer service in the hospitality industry.",
+                    "link": "https://www.helpscout.com/blog/customer-service-skills/"
+                }
+            }
+        }
+    },
+    {
+        "job": {
+            "title": "Janitor",
+            "keywords": ["Cleaning", "Maintenance", "Sanitation", "Custodian"],
+            "type": "Full-time",
+            "des": "A janitor is responsible for maintaining cleanliness and sanitation in various facilities.",
+            "image": "",
+            "applyLink": "https://www.indeed.com/q-janitor-jobs.html",
+            "requirements": ["Attention to detail", "Physical stamina", "Knowledge of cleaning products"],
+            "qualifications": [
+                "Previous experience in janitorial work is a plus",
+                "Ability to work independently",
+                "Understanding of sanitation standards"
+            ],
+            "resources": {
+                "tool": {
+                    "title": "Industrial Vacuum Cleaner",
+                    "des": "A powerful vacuum cleaner used for large-scale cleaning.",
+                    "link": "https://www.nilfisk.com/"
+                },
+                "information": {
+                    "title": "Janitorial Best Practices",
+                    "des": "A guide to professional cleaning and maintenance.",
+                    "link": "https://www.cleanlink.com/"
+                }
+            }
+        }
+    },
+    {
+        "job": {
+            "title": "Store Clerk",
+            "keywords": ["Retail", "Sales", "Customer Service", "Stock Management"],
+            "type": "Part-time",
+            "des": "A store clerk assists customers, handles transactions, and maintains store inventory.",
+            "image": "",
+            "applyLink": "https://www.indeed.com/q-store-clerk-jobs.html",
+            "requirements": ["Cash handling", "Customer interaction", "Inventory management"],
+            "qualifications": [
+                "Experience in retail is a plus",
+                "Basic math and transaction skills",
+                "Friendly and helpful attitude"
+            ],
+            "resources": {
+                "tool": {
+                    "title": "Barcode Scanner",
+                    "des": "A device for scanning product barcodes for inventory and checkout.",
+                    "link": "https://www.zebra.com/"
+                },
+                "information": {
+                    "title": "Retail Management Guide",
+                    "des": "A guide to effective retail operations and customer service.",
+                    "link": "https://www.retaildoc.com/blog"
+                }
+            }
+        }
+    },
+    {
+        "job": {
+            "title": "Cashier",
+            "keywords": ["Retail", "Transactions", "Customer Service", "Sales"],
+            "type": "Part-time",
+            "des": "A cashier handles customer transactions, operates a register, and provides customer service.",
+            "image": "",
+            "applyLink": "https://www.indeed.com/q-cashier-jobs.html",
+            "requirements": ["Basic math skills", "Customer service", "Attention to detail"],
+            "qualifications": [
+                "Experience with cash handling is a plus",
+                "Ability to operate a register",
+                "Strong interpersonal skills"
+            ],
+            "resources": {
+                "tool": {
+                    "title": "Cash Register",
+                    "des": "A device for processing sales and handling transactions.",
+                    "link": "https://www.squareup.com/"
+                },
+                "information": {
+                    "title": "Retail Cash Handling Guide",
+                    "des": "A guide to handling cash transactions in retail.",
+                    "link": "https://www.thebalancesmb.com/"
+                }
+            }
+        }
+    },
+    {
+        "job": {
+            "title": "Security Guard",
+            "keywords": ["Safety", "Surveillance", "Protection", "Emergency Response"],
+            "type": "Full-time",
+            "des": "A security guard monitors premises, ensures safety, and responds to security concerns.",
+            "image": "",
+            "applyLink": "https://www.indeed.com/q-security-guard-jobs.html",
+            "requirements": ["Observational skills", "Security knowledge", "Physical fitness"],
+            "qualifications": [
+                "Security training certification preferred",
+                "Ability to handle emergency situations",
+                "Good communication skills"
+            ],
+            "resources": {
+                "tool": {
+                    "title": "Surveillance Camera System",
+                    "des": "A monitoring system for security and surveillance.",
+                    "link": "https://www.lorex.com/"
+                },
+                "information": {
+                    "title": "Security Procedures Guide",
+                    "des": "A guide on security protocols and best practices.",
+                    "link": "https://www.asisonline.org/"
+                }
+            }
+        }
+    },
+    {
+        "job": {
+            "title": "Delivery Driver",
+            "keywords": ["Logistics", "Driving", "Delivery", "Transportation"],
+            "type": "Full-time",
+            "des": "A delivery driver transports goods from one location to another.",
+            "image": "",
+            "applyLink": "https://www.indeed.com/q-delivery-driver-jobs.html",
+            "requirements": ["Valid driver's license", "Navigation skills", "Time management"],
+            "qualifications": [
+                "Clean driving record",
+                "Ability to lift heavy packages",
+                "Good communication skills"
+            ],
+            "resources": {
+                "tool": {
+                    "title": "GPS Navigation System",
+                    "des": "A device for route planning and navigation.",
+                    "link": "https://www.garmin.com/"
+                },
+                "information": {
+                    "title": "Safe Driving Guide",
+                    "des": "A resource for safe and efficient driving.",
+                    "link": "https://www.nsc.org/road"
+                }
+            }
+        }
+    },
+    {
+        "job": {
+            "title": "Receptionist",
+            "keywords": ["Administration", "Front Desk", "Customer Service", "Office"],
+            "type": "Full-time",
+            "des": "A receptionist manages front desk operations, greets visitors, and handles communication.",
+            "image": "",
+            "applyLink": "https://www.indeed.com/q-receptionist-jobs.html",
+            "requirements": ["Organizational skills", "Customer service", "Basic computer knowledge"],
+            "qualifications": [
+                "Experience in administrative roles preferred",
+                "Proficiency in office software",
+                "Good communication skills"
+            ],
+            "resources": {
+                "tool": {
+                    "title": "Office Phone System",
+                    "des": "A system for handling business calls and messages.",
+                    "link": "https://www.ringcentral.com/"
+                },
+                "information": {
+                    "title": "Receptionist Training Guide",
+                    "des": "A resource on front desk management and communication skills.",
+                    "link": "https://www.thebalancecareers.com/"
+                }
+            }
+        }
+    },
+    {
+        "job": {
+            "title": "Housekeeper",
+            "keywords": ["Cleaning", "Household", "Sanitation", "Hospitality"],
+            "type": "Part-time",
+            "des": "A housekeeper cleans and maintains homes, hotels, or offices.",
+            "image": "",
+            "applyLink": "https://www.indeed.com/q-housekeeper-jobs.html",
+            "requirements": ["Attention to detail", "Physical stamina", "Time management"],
+            "qualifications": [
+                "Experience in housekeeping preferred",
+                "Ability to work independently",
+                "Knowledge of cleaning techniques and supplies"
+            ],
+            "resources": {
+                "tool": {
+                    "title": "Vacuum Cleaner",
+                    "des": "A tool for deep cleaning carpets and floors.",
+                    "link": "https://www.dyson.com/"
+                },
+                "information": {
+                    "title": "Housekeeping Best Practices",
+                    "des": "A guide on cleaning techniques and efficiency.",
+                    "link": "https://www.ahla.com/"
+                }
+            }
+        }
+    }    
 ]

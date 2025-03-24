@@ -165,5 +165,85 @@
             "link": "https://www.sonopath.com/",
             "severityMatch": 9
         }
+    },
+    {
+        "tool": {
+            "title": "POS System",
+            "type": "Service Technology",
+            "keywords": ["transactions", "order management", "cash register"],
+            "des": "A digital point-of-sale system for handling orders and payments.",
+            "link": "https://www.squarespace.com/pos",
+            "severityMatch": 6
+        }
+    },
+    {
+        "tool": {
+            "title": "Industrial Vacuum Cleaner",
+            "type": "Cleaning Equipment",
+            "keywords": ["cleaning", "maintenance", "janitorial"],
+            "des": "A powerful vacuum cleaner used for large-scale cleaning.",
+            "link": "https://www.nilfisk.com/",
+            "severityMatch": 7
+        }
+    },
+    {
+        "tool": {
+            "title": "Barcode Scanner",
+            "type": "Retail Equipment",
+            "keywords": ["inventory", "checkout", "retail management"],
+            "des": "A device for scanning product barcodes for inventory and checkout.",
+            "link": "https://www.zebra.com/",
+            "severityMatch": 7
+        }
+    },
+    {
+        "tool": {
+            "title": "Cash Register",
+            "type": "Retail Equipment",
+            "keywords": ["transactions", "cash handling", "checkout"],
+            "des": "A device for processing sales and handling transactions.",
+            "link": "https://www.squareup.com/",
+            "severityMatch": 7
+        }
+    },
+    {
+        "tool": {
+            "title": "Surveillance Camera System",
+            "type": "Security Equipment",
+            "keywords": ["monitoring", "safety", "protection"],
+            "des": "A monitoring system for security and surveillance.",
+            "link": "https://www.lorex.com/",
+            "severityMatch": 9
+        }
+    },
+    {
+        "tool": {
+            "title": "GPS Navigation System",
+            "type": "Navigation Technology",
+            "keywords": ["logistics", "routing", "transport"],
+            "des": "A device for route planning and navigation.",
+            "link": "https://www.garmin.com/",
+            "severityMatch": 8
+        }
+    },
+    {
+        "tool": {
+            "title": "Office Phone System",
+            "type": "Communication Tool",
+            "keywords": ["office", "customer service", "calls"],
+            "des": "A system for handling business calls and messages.",
+            "link": "https://www.ringcentral.com/",
+            "severityMatch": 6
+        }
+    },
+    {
+        "tool": {
+            "title": "Vacuum Cleaner",
+            "type": "Cleaning Equipment",
+            "keywords": ["housekeeping", "cleaning", "sanitation"],
+            "des": "A tool for deep cleaning carpets and floors.",
+            "link": "https://www.dyson.com/",
+            "severityMatch": 7
+        }
     }
 ]

@@ -158,5 +158,85 @@
             "link": "https://www.avma.org/",
             "severityMatch": 9
         }
+    },
+    {
+        "information": {
+            "title": "Customer Service Guide",
+            "type": "Hospitality Resource",
+            "keywords": ["customer service", "food industry", "communication"],
+            "des": "A resource on providing excellent customer service in the hospitality industry.",
+            "link": "https://www.helpscout.com/blog/customer-service-skills/",
+            "severityMatch": 7
+        }
+    },
+    {
+        "information": {
+            "title": "Janitorial Best Practices",
+            "type": "Cleaning Resource",
+            "keywords": ["cleaning", "sanitation", "maintenance"],
+            "des": "A guide to professional cleaning and maintenance.",
+            "link": "https://www.cleanlink.com/",
+            "severityMatch": 8
+        }
+    },
+    {
+        "information": {
+            "title": "Retail Management Guide",
+            "type": "Retail Resource",
+            "keywords": ["retail", "inventory", "store operations"],
+            "des": "A guide to effective retail operations and customer service.",
+            "link": "https://www.retaildoc.com/blog",
+            "severityMatch": 7
+        }
+    },
+    {
+        "information": {
+            "title": "Retail Cash Handling Guide",
+            "type": "Retail Resource",
+            "keywords": ["cash register", "money handling", "retail operations"],
+            "des": "A guide to handling cash transactions in retail.",
+            "link": "https://www.thebalancesmb.com/",
+            "severityMatch": 7
+        }
+    },
+    {
+        "information": {
+            "title": "Security Procedures Guide",
+            "type": "Security Resource",
+            "keywords": ["safety", "surveillance", "emergency response"],
+            "des": "A guide on security protocols and best practices.",
+            "link": "https://www.asisonline.org/",
+            "severityMatch": 9
+        }
+    },
+    {
+        "information": {
+            "title": "Safe Driving Guide",
+            "type": "Transportation Resource",
+            "keywords": ["driving", "road safety", "delivery"],
+            "des": "A resource for safe and efficient driving.",
+            "link": "https://www.nsc.org/road",
+            "severityMatch": 8
+        }
+    },
+    {
+        "information": {
+            "title": "Receptionist Training Guide",
+            "type": "Office Resource",
+            "keywords": ["administration", "front desk", "customer service"],
+            "des": "A resource on front desk management and communication skills.",
+            "link": "https://www.thebalancecareers.com/",
+            "severityMatch": 6
+        }
+    },
+    {
+        "information": {
+            "title": "Safe Driving Guide",
+            "type": "Driving Resource",
+            "keywords": ["delivery driver", "navigation", "safety"],
+            "des": "A resource on defensive driving and delivery efficiency.",
+            "link": "https://www.nhtsa.gov/",
+            "severityMatch": 9
+        }
     }
 ]
