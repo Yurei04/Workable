@@ -89,9 +89,9 @@ export default function App() {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5 justify-center items-center">
-      <CardBlog notifications={data1} image="/images/temp.jpg" />
-      <CardBlog notifications={data2} image="/images/temp.jpg" />
-      <CardBlog notifications={data3} image="/images/temp.jpg" />
+      <CardBlog notifications={data1} image="/images/image3.png" />
+      <CardBlog notifications={data2} image="/images/image4.png" />
+      <CardBlog notifications={data3} image="/images/image2.jpg" />
     </div>
   );
   

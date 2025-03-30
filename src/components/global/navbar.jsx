@@ -44,6 +44,12 @@ const components = [
         description:
         "STT for no hands searching or browsing",
     },
+    {
+      title: "User Profile",
+      href: "/layoutPage/userProfileLayout",
+      description:
+      "User profile section",
+  },
 ];
 
 export default function NavigationMenuDemo() {

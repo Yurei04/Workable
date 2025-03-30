@@ -32,11 +32,13 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
+import Link from "next/link";
 
 const data = {
   user: {
     name: "kaede_123",
     email: "kaed@gmail.com",
+    url: "/layoutPage/userProfileLayout",
     avatar: "/avatars/shadcn.jpg",
   },
   navMain: [
@@ -174,7 +176,9 @@ export default function AppSidebar(props) {
         <NavSecondary items={data.navSecondary} className="mt-auto" />
       </SidebarContent>
       <SidebarFooter>
-        <NavUser user={data.user} />
+        <Link href="/layoutPage/userProfileLayout">
+          <NavUser user={data.user} />
+        </Link>
       </SidebarFooter>
     </Sidebar>
   )

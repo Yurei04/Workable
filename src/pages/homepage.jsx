@@ -23,7 +23,6 @@ import {
   DialogClose,
 } from "@/components/ui/dialog";
 import Link from "next/link";
-import UserProfile from "./user";
 
 export default function Homepage() {
   return (
@@ -37,7 +36,7 @@ export default function Homepage() {
           className="col-span-12 sm:col-span-7 text-center sm:text-left"
         >
           <h3 className="text-black dark:text-white text-3xl sm:text-5xl lg:text-7xl font-bold mb-4">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-white">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-200">
               Workable{" "}
             </span>
             <br />
@@ -76,7 +75,7 @@ export default function Homepage() {
         >
           <div className="relative w-48 h-48 sm:w-60 sm:h-60 lg:w-72 lg:h-72 rounded-full bg-[#181818] overflow-hidden">
             <Image
-              src="/your-image-path.jpg"
+              src="/images/workableB.png"
               alt="Workable Logo"
               layout="fill"
               objectFit="cover"
@@ -161,8 +160,6 @@ export default function Homepage() {
           </CardFooter>
         </Card>
       </div>
-
-      <UserProfile />
     </div>
   );
 }
