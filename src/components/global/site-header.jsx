@@ -2,6 +2,7 @@ import { Separator } from "@/components/ui/separator";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import ModeToggle from "@/components/global/styleModes";
 import NavigationMenuDemo from "./navbar";
+import  FontToggle  from "./fontToggle";
 
 export default function SiteHeader() {
   return (
@@ -20,6 +21,10 @@ export default function SiteHeader() {
       <div className="flex items-center">
         <ModeToggle />
       </div>
+      <div className="flex items-center">
+        <FontToggle />
+      </div>
+      
       
     </header>
   );

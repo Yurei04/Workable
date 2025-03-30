@@ -4,6 +4,17 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
+
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url("/path-to-opendyslexic.woff2") format("woff2");
+}
+
+:root {
+  --font-sans: system-ui;
+}
+
 * {
   scroll-behavior: smooth;
 }
