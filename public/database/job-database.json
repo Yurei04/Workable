@@ -7,7 +7,9 @@
             "des": "A software engineer designs, develops, and maintains software applications.",
             "image": "",
             "applyLink": "https://company.com/apply",
-            "requirements": ["JavaScript", "React", "REST APIs", "Problem-solving"],
+            "requirements": {
+                "capabilityRequired": "5 - 7"
+            },
             "qualifications": [
                 "Proficient in JavaScript and React",
                 "Experience with REST APIs",

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Jesslee Diassan",
+        "age": "17",
+        
+        "occupation": "unemployed",
+        "difficulties": {
+            "readingWriting": "1",
+            "vision": "1",
+            "hearing": "1",
+            "speechCommunication": "1",
+            "physicalAbility": "1",
+            "mentalFocus": "1",
+            "financialWorkBarriers": "1",
+            "legalSocialBarriers": "1",
+            "caregiversDependents": "1",
+            "techSkills": "1"
+        },
+        "workableSupport": {
+            "readingWriting": 5,
+            "vision": 4,
+            "hearing": 6,
+            "speechCommunication": 5,
+            "physicalAbility": 3,
+            "mentalFocus": 4,
+            "financialWorkBarriers": 6,
+            "legalSocialBarriers": 7,
+            "caregiversDependents": 4,
+            "techSkills": 5
+        }
+    }
+]

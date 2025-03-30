@@ -128,6 +128,7 @@ export default function JobFindTableBack() {
             <TableHead>Info</TableHead>
             <TableHead>More</TableHead>
             <TableHead>Listen</TableHead>
+            <TableHead>Recommeded</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -160,6 +161,9 @@ export default function JobFindTableBack() {
               </TableCell>
               <TableCell>
                 <Button onClick={() => listen(job)}>Listen</Button>
+              </TableCell>
+              <TableCell>
+                <TableCell>{job.job.requirements.capabilityRequired}</TableCell>
               </TableCell>
             </TableRow>
           ))}
