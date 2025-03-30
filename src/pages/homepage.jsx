@@ -23,6 +23,7 @@ import {
   DialogClose,
 } from "@/components/ui/dialog";
 import Link from "next/link";
+import UserProfile from "./user";
 
 export default function Homepage() {
   return (
@@ -160,6 +161,8 @@ export default function Homepage() {
           </CardFooter>
         </Card>
       </div>
+
+      <UserProfile />
     </div>
   );
 }

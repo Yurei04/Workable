@@ -96,7 +96,6 @@ export default function JobFindTableBack() {
 
   return (
     <div className="w-full p-10 items-center justify-center">
-      {/* Search and Filters */}
       <div className="flex gap-2 mb-4">
         <Input
           placeholder="Search by job title or keyword..."
