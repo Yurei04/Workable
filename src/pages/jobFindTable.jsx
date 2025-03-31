@@ -162,7 +162,7 @@ export default function JobFindTableBack() {
                 <Button onClick={() => listen(job)}>Listen</Button>
               </TableCell>
               <TableCell>
-                <TableCell>{job.job.requirements.capabilityRequired}</TableCell>
+                {job.job.requirements.capabilityRequired?.[1] ?? "N/A"}
               </TableCell>
             </TableRow>
           ))}
@@ -170,13 +170,12 @@ export default function JobFindTableBack() {
       </Table>
 
 
-
       {/* Modal for Job Details */}
       {selectedJob && (
         <Dialog open={openDialog} onOpenChange={setOpenDialog}>
-          <DialogContent className="max-w-full w-full h-[90vh]">
+          <DialogContent className="max-w-full w-full h-[90vh] overflow-auto p-6">
             <DialogHeader>
-              <DialogTitle className="text-2xl">
+              <DialogTitle className="text-2xl break-words">
                 {selectedJob.job.title}
               </DialogTitle>
               <DialogClose />
@@ -193,41 +192,51 @@ export default function JobFindTableBack() {
 
             {/* Job Description */}
             <div className="mt-4 space-y-2">
-              <p className="text-lg font-semibold">Description:</p>
-              <p>{selectedJob.job.des}</p>
+              <p className="text-lg font-semibold break-words">Description:</p>
+              <p className="break-words whitespace-normal">{selectedJob.job.des}</p>
             </div>
 
             {/* Qualifications */}
             <div className="mt-4 space-y-2">
-              <p className="text-lg font-semibold">Qualifications:</p>
-              <ul className="list-disc list-inside">
+              <p className="text-lg font-semibold break-words">Qualifications:</p>
+              <ul className="list-disc list-inside space-y-1 break-words">
                 {selectedJob.job.qualifications?.map((q, index) => (
-                  <li key={index}>{q}</li>
+                  <li key={index} className="break-words">{q}</li>
                 ))}
               </ul>
             </div>
 
-            {/* Apply Button */}
-            <div className="mt-6 flex justify-between">
+            {/* Capability Requirements */}
+            <div className="mt-4 space-y-2">
+              <p className="text-lg font-semibold break-words">Capability Requirements:</p>
+              <ul className="list-disc list-inside space-y-1 break-words">
+                {selectedJob.job.requirements.capabilityRequired?.map((q, index) => (
+                  <li key={index} className="break-words">{q}</li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Apply Button & Resources */}
+            <div className="mt-6 flex justify-between flex-wrap gap-4">
               <Button asChild>
-                <a href={selectedJob.job.applyLink} target="_blank">
+                <a href={selectedJob.job.applyLink} target="_blank" className="break-words">
                   Apply Now
                 </a>
               </Button>
 
               {/* External Links */}
-              <div className="flex gap-2">
+              <div className="flex gap-4 flex-wrap">
                 <a
                   href={selectedJob.job.resources.tool.link}
                   target="_blank"
-                  className="text-blue-500 hover:underline"
+                  className="text-blue-500 hover:underline break-words"
                 >
                   {selectedJob.job.resources.tool.title}
                 </a>
                 <a
                   href={selectedJob.job.resources.information.link}
                   target="_blank"
-                  className="text-blue-500 hover:underline"
+                  className="text-blue-500 hover:underline break-words"
                 >
                   {selectedJob.job.resources.information.title}
                 </a>

@@ -7,14 +7,14 @@
             "des": "A software engineer designs, develops, and maintains software applications.",
             "image": "",
             "applyLink": "https://company.com/apply",
-            "requirements": {
-                "capabilityRequired": "5 - 7"
-            },
             "qualifications": [
                 "Proficient in JavaScript and React",
                 "Experience with REST APIs",
                 "Strong problem-solving skills"
             ],
+            "requirements": {
+                "capabilityRequired": ["readingWriting: 5", "vision: 4", "hearing: 6"]
+            },
             "resources": {
                 "tool": {
                     "title": "BetterHelp",
@@ -37,7 +37,9 @@
             "des": "A teacher educates students and creates engaging lesson plans.",
             "image": "",
             "applyLink": "https://schooljobs.com/apply",
-            "requirements": ["Lesson planning", "Classroom management", "Communication skills"],
+            "requirements": {
+                "capabilityRequired": "readingWriting: 5, vision: 4, hearing: 6"
+            },
             "qualifications": [
                 "Bachelor's degree in Education",
                 "Experience in classroom management",
@@ -65,7 +67,9 @@
             "des": "A financial analyst examines financial data and trends to guide investment decisions.",
             "image": "",
             "applyLink": "https://financejobs.com/apply",
-            "requirements": ["Financial modeling", "Data analysis", "Market research"],
+            "requirements": {
+                "capabilityRequired": "readingWriting: 5, vision: 4, hearing: 6"
+            },
             "qualifications": [
                 "Degree in Finance or Economics",
                 "Strong analytical and problem-solving skills",
@@ -93,7 +97,9 @@
             "des": "A UX designer creates intuitive and visually appealing user experiences.",
             "image": "",
             "applyLink": "https://designjobs.com/apply",
-            "requirements": ["Figma", "Wireframing", "User research"],
+            "requirements": {
+                "capabilityRequired": "readingWriting: 5, vision: 4, hearing: 6"
+            },
             "qualifications": [
                 "Experience in UX/UI design",
                 "Strong portfolio of design projects",
@@ -121,7 +127,9 @@
             "des": "A photographer captures and edits high-quality images for various purposes.",
             "image": "",
             "applyLink": "https://photojobs.com/apply",
-            "requirements": ["Camera operation", "Lighting techniques", "Photo editing"],
+            "requirements": {
+                "capabilityRequired": ["readingWriting: 5", "vision: 4", "hearing: 6"]
+            },
             "qualifications": [
                 "Experience in professional photography",
                 "Proficiency in Adobe Lightroom and Photoshop",
@@ -149,7 +157,9 @@
             "des": "A nurse provides medical care and supports patients' health and recovery.",
             "image": "",
             "applyLink": "https://hospitaljobs.com/apply",
-            "requirements": ["Patient care", "Medical procedures", "Compassion"],
+            "requirements": {
+                "capabilityRequired": ["readingWriting: 5", "vision: 4", "hearing: 6"]
+            },
             "qualifications": [
                 "Registered Nurse (RN) certification",
                 "Experience in patient care",
@@ -177,7 +187,9 @@
             "des": "A cybersecurity analyst protects systems and networks from cyber threats and attacks.",
             "image": "",
             "applyLink": "https://company.com/apply-cybersecurity",
-            "requirements": ["Penetration Testing", "Firewalls", "Ethical Hacking", "Incident Response"],
+            "requirements": {
+                "capabilityRequired": ["readingWriting: 5", "vision: 4", "hearing: 6"]
+            },
             "qualifications": [
                 "Experience with cybersecurity tools like Wireshark and Metasploit",
                 "Understanding of network security",
@@ -205,7 +217,9 @@
             "des": "A biotechnologist applies biological principles to develop new products and solutions in healthcare and agriculture.",
             "image": "",
             "applyLink": "https://company.com/apply-biotech",
-            "requirements": ["Genetics", "Biochemistry", "Lab Experience", "Analytical Thinking"],
+            "requirements": {
+                "capabilityRequired": ["readingWriting: 5", "vision: 4", "hearing: 6"]
+            },
             "qualifications": [
                 "Degree in Biotechnology or related field",
                 "Experience with lab equipment and research methods",
@@ -233,7 +247,9 @@
             "des": "A video game tester plays and evaluates video games to find and report bugs.",
             "image": "",
             "applyLink": "https://company.com/apply-gametest",
-            "requirements": ["Attention to Detail", "Gaming Knowledge", "Bug Reporting", "Problem-Solving"],
+            "requirements": {
+                "capabilityRequired": ["readingWriting: 5", "vision: 4", "hearing: 6"]
+            },
             "qualifications": [
                 "Experience playing various game genres",
                 "Ability to document and report game bugs",
@@ -261,7 +277,9 @@
             "des": "A supply chain manager oversees and optimizes supply chain processes and logistics.",
             "image": "",
             "applyLink": "https://company.com/apply-scm",
-            "requirements": ["Inventory Management", "Procurement", "Data Analysis", "Strategic Planning"],
+            "requirements": {
+                "capabilityRequired": ["readingWriting: 5", "vision: 4", "hearing: 6"]
+            },
             "qualifications": [
                 "Experience in logistics and supply chain management",
                 "Strong data analysis skills",
@@ -289,7 +307,9 @@
             "des": "An event planner organizes and manages events, ensuring all logistics are handled efficiently.",
             "image": "",
             "applyLink": "https://company.com/apply-eventplanner",
-            "requirements": ["Organizational Skills", "Negotiation", "Creativity", "Time Management"],
+            "requirements": {
+                "capabilityRequired": ["readingWriting: 5", "vision: 4", "hearing: 6"]
+            },
             "qualifications": [
                 "Experience in event planning or hospitality management",
                 "Ability to handle multiple tasks under pressure",
@@ -317,7 +337,9 @@
             "des": "A solar panel technician installs and maintains solar energy systems.",
             "image": "",
             "applyLink": "https://company.com/apply-solartech",
-            "requirements": ["Electrical Wiring", "Safety Compliance", "Problem-Solving"],
+            "requirements": {
+                "capabilityRequired": ["readingWriting: 5", "vision: 4", "hearing: 6"]
+            },
             "qualifications": [
                 "Knowledge of solar power systems and electrical installations",
                 "Ability to work at heights and handle heavy equipment",
@@ -345,7 +367,9 @@
             "des": "A wine sommelier is a trained wine expert who recommends wine pairings and curates wine selections.",
             "image": "",
             "applyLink": "https://company.com/apply-sommelier",
-            "requirements": ["Wine Knowledge", "Customer Service", "Tasting Expertise", "Presentation Skills"],
+            "requirements": {
+                "capabilityRequired": ["readingWriting: 5", "vision: 4", "hearing: 6"]
+            },
             "qualifications": [
                 "Certification in wine studies (WSET, CMS, or equivalent)",
                 "Experience in hospitality or fine dining",
@@ -373,7 +397,9 @@
             "des": "An electrician installs and repairs electrical systems in homes and buildings.",
             "image": "",
             "applyLink": "https://www.indeed.com/q-electrician-jobs.html",
-            "requirements": ["Electrical Certification", "Problem-solving", "Safety Knowledge"],
+            "requirements": {
+                "capabilityRequired": ["readingWriting: 5", "vision: 4", "hearing: 6"]
+            },
             "qualifications": [
                 "Licensed electrician",
                 "Experience with electrical wiring and repairs",
@@ -401,7 +427,9 @@
             "des": "A firefighter responds to emergencies, extinguishes fires, and rescues people.",
             "image": "",
             "applyLink": "https://nationaltestingnetwork.com/publicsafetyjobs/search.cfm?position=2",
-            "requirements": ["Fire Academy Training", "Physical Fitness", "Emergency Response"],
+            "requirements": {
+                "capabilityRequired": ["readingWriting: 5", "vision: 4", "hearing: 6"]
+            },
             "qualifications": [
                 "Certified firefighter",
                 "Strong teamwork and problem-solving skills",
@@ -429,7 +457,9 @@
             "des": "A digital marketer develops online strategies to promote businesses and products.",
             "image": "",
             "applyLink": "https://www.indeed.com/q-digital-marketer-jobs.html",
-            "requirements": ["SEO", "Google Ads", "Content Creation", "Data Analysis"],
+            "requirements": {
+                "capabilityRequired": ["readingWriting: 5", "vision: 4", "hearing: 6"]
+            },
             "qualifications": [
                 "Experience in social media marketing",
                 "Strong understanding of online advertising",
@@ -457,7 +487,9 @@
             "des": "A plumber installs and repairs water and drainage systems.",
             "image": "",
             "applyLink": "https://www.indeed.com/q-plumber-jobs.html",
-            "requirements": ["Plumbing Certification", "Problem-solving", "Technical Skills"],
+            "requirements": {
+                "capabilityRequired": ["readingWriting: 5", "vision: 4", "hearing: 6"]
+            },
             "qualifications": [
                 "Licensed plumber",
                 "Experience with pipe installation",
@@ -485,7 +517,9 @@
             "des": "A veterinarian diagnoses and treats medical conditions in animals.",
             "image": "",
             "applyLink": "https://www.indeed.com/q-veterinarian-jobs.html",
-            "requirements": ["Veterinary Degree", "Animal Care Knowledge", "Surgical Skills"],
+            "requirements": {
+                "capabilityRequired": ["readingWriting: 5", "vision: 4", "hearing: 6"]
+            },
             "qualifications": [
                 "Licensed veterinarian",
                 "Experience in diagnosing and treating animals",
@@ -513,7 +547,9 @@
             "des": "A graphic designer creates visual content to communicate messages.",
             "image": "",
             "applyLink": "https://www.indeed.com/q-remote-graphic-designer-jobs.html",
-            "requirements": ["Adobe Suite", "Creative thinking", "Branding knowledge"],
+            "requirements": {
+                "capabilityRequired": ["readingWriting: 5", "vision: 4", "hearing: 6"]
+            },
             "qualifications": [
                 "Experience with Photoshop and Illustrator",
                 "Ability to create branding materials",
@@ -541,7 +577,9 @@
             "des": "A mechanical engineer designs, tests, and improves mechanical systems.",
             "image": "",
             "applyLink": "https://www.indeed.com/q-mechanical-engineer-jobs.html",
-            "requirements": ["Mechanical Engineering degree", "CAD software experience", "Problem-solving"],
+            "requirements": {
+                "capabilityRequired": ["readingWriting: 5", "vision: 4", "hearing: 6"]
+            },
             "qualifications": [
                 "Licensed mechanical engineer",
                 "Experience in CAD software",
@@ -569,7 +607,9 @@
             "des": "A chef creates and prepares meals, develops recipes, and manages kitchen operations.",
             "image": "",
             "applyLink": "https://www.indeed.com/q-chef-jobs.html",
-            "requirements": ["Culinary degree", "Cooking experience", "Creativity"],
+            "requirements": {
+                "capabilityRequired": ["readingWriting: 5", "vision: 4", "hearing: 6"]
+            },
             "qualifications": [
                 "Experience in professional kitchens",
                 "Ability to create unique dishes",
@@ -597,7 +637,9 @@
             "des": "A data scientist analyzes complex data sets to provide business insights.",
             "image": "",
             "applyLink": "https://www.indeed.com/q-data-scientist-jobs.html",
-            "requirements": ["Python", "SQL", "Statistics", "Machine Learning"],
+            "requirements": {
+                "capabilityRequired": ["readingWriting: 5", "vision: 4", "hearing: 6"]
+            },
             "qualifications": [
                 "Experience with data visualization",
                 "Proficient in Python and SQL",
@@ -625,7 +667,9 @@
             "des": "A waitress takes orders, serves food and beverages, and provides excellent customer service.",
             "image": "",
             "applyLink": "https://www.indeed.com/q-waitress-jobs.html",
-            "requirements": ["Friendly demeanor", "Multitasking skills", "Ability to handle stress"],
+            "requirements": {
+                "capabilityRequired": ["readingWriting: 5", "vision: 4", "hearing: 6"]
+            },
             "qualifications": [
                 "Experience in food service preferred",
                 "Strong communication skills",
@@ -653,7 +697,9 @@
             "des": "A janitor is responsible for maintaining cleanliness and sanitation in various facilities.",
             "image": "",
             "applyLink": "https://www.indeed.com/q-janitor-jobs.html",
-            "requirements": ["Attention to detail", "Physical stamina", "Knowledge of cleaning products"],
+            "requirements": {
+                "capabilityRequired": ["readingWriting: 5", "vision: 4", "hearing: 6"]
+            },
             "qualifications": [
                 "Previous experience in janitorial work is a plus",
                 "Ability to work independently",
@@ -681,7 +727,9 @@
             "des": "A store clerk assists customers, handles transactions, and maintains store inventory.",
             "image": "",
             "applyLink": "https://www.indeed.com/q-store-clerk-jobs.html",
-            "requirements": ["Cash handling", "Customer interaction", "Inventory management"],
+            "requirements": {
+                "capabilityRequired": ["readingWriting: 5", "vision: 4", "hearing: 6"]
+            },
             "qualifications": [
                 "Experience in retail is a plus",
                 "Basic math and transaction skills",
@@ -709,7 +757,9 @@
             "des": "A cashier handles customer transactions, operates a register, and provides customer service.",
             "image": "",
             "applyLink": "https://www.indeed.com/q-cashier-jobs.html",
-            "requirements": ["Basic math skills", "Customer service", "Attention to detail"],
+            "requirements": {
+                "capabilityRequired": ["readingWriting: 5", "vision: 4", "hearing: 6"]
+            },
             "qualifications": [
                 "Experience with cash handling is a plus",
                 "Ability to operate a register",
@@ -737,7 +787,9 @@
             "des": "A security guard monitors premises, ensures safety, and responds to security concerns.",
             "image": "",
             "applyLink": "https://www.indeed.com/q-security-guard-jobs.html",
-            "requirements": ["Observational skills", "Security knowledge", "Physical fitness"],
+            "requirements": {
+                "capabilityRequired": ["readingWriting: 5", "vision: 4", "hearing: 6"]
+            },
             "qualifications": [
                 "Security training certification preferred",
                 "Ability to handle emergency situations",
@@ -765,7 +817,9 @@
             "des": "A delivery driver transports goods from one location to another.",
             "image": "",
             "applyLink": "https://www.indeed.com/q-delivery-driver-jobs.html",
-            "requirements": ["Valid driver's license", "Navigation skills", "Time management"],
+            "requirements": {
+                "capabilityRequired": ["readingWriting: 5", "vision: 4", "hearing: 6"]
+            },
             "qualifications": [
                 "Clean driving record",
                 "Ability to lift heavy packages",
@@ -793,7 +847,9 @@
             "des": "A receptionist manages front desk operations, greets visitors, and handles communication.",
             "image": "",
             "applyLink": "https://www.indeed.com/q-receptionist-jobs.html",
-            "requirements": ["Organizational skills", "Customer service", "Basic computer knowledge"],
+            "requirements": {
+                "capabilityRequired": ["readingWriting: 5", "vision: 4", "hearing: 6"]
+            },
             "qualifications": [
                 "Experience in administrative roles preferred",
                 "Proficiency in office software",
@@ -821,7 +877,9 @@
             "des": "A housekeeper cleans and maintains homes, hotels, or offices.",
             "image": "",
             "applyLink": "https://www.indeed.com/q-housekeeper-jobs.html",
-            "requirements": ["Attention to detail", "Physical stamina", "Time management"],
+            "requirements": {
+                "capabilityRequired": ["readingWriting: 5", "vision: 4", "hearing: 6"]
+            },
             "qualifications": [
                 "Experience in housekeeping preferred",
                 "Ability to work independently",
