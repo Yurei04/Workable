@@ -18,6 +18,7 @@ import {
   TableHead,
 } from "@/components/ui/table";
 import { Card, CardContent } from "@/components/ui/card";
+import Recommend from "@/components/global/recommend";
 
 export default function JobFindSearch() {
   const [toolDatabase, setToolDatabase] = useState([]);
@@ -236,7 +237,7 @@ export default function JobFindSearch() {
       <Button onClick={stopListening} disabled={!listening}>
         ⏹️ Stop
       </Button>
-      <Button onClick={recommend}>Recommend</Button>
+      <Recommend />
 
 
       <Dialog open={openDialog} onOpenChange={setOpenDialog}>

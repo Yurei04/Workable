@@ -18,6 +18,7 @@ import {
   TableHead,
 } from "@/components/ui/table";
 import { Card, CardContent } from "@/components/ui/card";
+import RecommendResource from "@/components/global/recomendResource";
 
 export default function ResourceFindSearch() {
   const [toolDatabase, setToolDatabase] = useState([]);
@@ -208,7 +209,7 @@ export default function ResourceFindSearch() {
       <Button onClick={stopListening} disabled={!listening}>
         ⏹️ Stop
       </Button>
-      <Button onClick={recommend}>Recommend</Button>
+      <RecommendResource />
 
 
       <Dialog open={openDialog} onOpenChange={setOpenDialog}>
