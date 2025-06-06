@@ -1,7 +1,7 @@
 import NavBar from "@/app/navbar";
 import Footer from "@/pages/footer";
 
-export default function BlogLayout({ children }) {
+export default function ResourceHubLayout({ children }) {
   return (
       <div>
         <NavBar />

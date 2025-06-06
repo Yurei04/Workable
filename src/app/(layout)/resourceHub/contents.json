@@ -1,0 +1,327 @@
+[
+    {
+      "id": 1,
+      "header": "Software Engineer",
+      "type": "Remote",
+      "status": "Hiring",
+      "Salary": "200,000",
+      "Review": "10",
+      "Company": "XYZ Company",
+      "requirements": {
+        "circumstances": "10",
+        "barriers": "10",
+        "skills": "10",
+        "education": "10",
+        "capabilities": "10",
+        "capacity": "10"
+      },
+      "des": "Build, test, and maintain scalable web apps.",
+      "keywords": ["code", "think", "develop", "debug", "deploy"],
+      "qualifications": [
+        "Proficient in JavaScript and React",
+        "Experience with REST APIs",
+        "Strong problem-solving skills"
+      ],
+      "resources": {
+        "tool": {
+          "title": "BetterHelp",
+          "des": "An online counseling platform for mental health support.",
+          "link": "https://www.betterhelp.com/"
+        },
+        "information": {
+          "title": "Psychology Research",
+          "des": "A hub for the latest psychology studies and mental health insights.",
+          "link": "https://www.psychologytoday.com/"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "header": "Data Analyst",
+      "type": "Hybrid",
+      "status": "Hiring",
+      "Salary": "95,000",
+      "Review": "8",
+      "Company": "DataSolve Inc.",
+      "requirements": {
+        "circumstances": "9",
+        "barriers": "8",
+        "skills": "9",
+        "education": "8",
+        "capabilities": "9",
+        "capacity": "8"
+      },
+      "des": "Interpret data and provide actionable insights.",
+      "keywords": ["data", "analyze", "insights", "SQL", "Excel"],
+      "qualifications": [
+        "Strong SQL and Excel skills",
+        "Experience with Power BI or Tableau",
+        "Statistical knowledge"
+      ],
+      "resources": {
+        "tool": {
+          "title": "DataCamp",
+          "des": "Platform for learning data analysis.",
+          "link": "https://www.datacamp.com/"
+        },
+        "information": {
+          "title": "Kaggle Learn",
+          "des": "Free learning environment for data science.",
+          "link": "https://www.kaggle.com/learn"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "header": "UX Designer",
+      "type": "On-site",
+      "status": "Closed",
+      "Salary": "85,000",
+      "Review": "7",
+      "Company": "Creative Minds",
+      "requirements": {
+        "circumstances": "6",
+        "barriers": "7",
+        "skills": "8",
+        "education": "7",
+        "capabilities": "8",
+        "capacity": "7"
+      },
+      "des": "Design user-centered interfaces for mobile and web.",
+      "keywords": ["design", "Figma", "UX", "wireframe", "prototype"],
+      "qualifications": [
+        "Experience with Figma and Adobe XD",
+        "User research knowledge",
+        "Portfolio of UX projects"
+      ],
+      "resources": {
+        "tool": {
+          "title": "Adobe Creative Cloud",
+          "des": "Design tools for professionals.",
+          "link": "https://www.adobe.com/creativecloud.html"
+        },
+        "information": {
+          "title": "Smashing Magazine",
+          "des": "Articles and resources for designers.",
+          "link": "https://www.smashingmagazine.com/"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "header": "Cybersecurity Analyst",
+      "type": "Remote",
+      "status": "Hiring",
+      "Salary": "120,000",
+      "Review": "9",
+      "Company": "CyberFort",
+      "requirements": {
+        "circumstances": "8",
+        "barriers": "8",
+        "skills": "10",
+        "education": "9",
+        "capabilities": "9",
+        "capacity": "9"
+      },
+      "des": "Protect systems from digital threats.",
+      "keywords": ["security", "threats", "firewall", "monitor", "compliance"],
+      "qualifications": [
+        "Knowledge of cybersecurity frameworks",
+        "Experience with SIEM tools",
+        "Certifications (e.g., CompTIA Security+)"
+      ],
+      "resources": {
+        "tool": {
+          "title": "TryHackMe",
+          "des": "Interactive cybersecurity training.",
+          "link": "https://tryhackme.com/"
+        },
+        "information": {
+          "title": "OWASP",
+          "des": "Open Web Application Security Project.",
+          "link": "https://owasp.org/"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "header": "Marketing Specialist",
+      "type": "Hybrid",
+      "status": "Hiring",
+      "Salary": "70,000",
+      "Review": "6",
+      "Company": "BrandBuzz",
+      "requirements": {
+        "circumstances": "7",
+        "barriers": "6",
+        "skills": "7",
+        "education": "7",
+        "capabilities": "8",
+        "capacity": "7"
+      },
+      "des": "Manage campaigns and branding strategies.",
+      "keywords": ["SEO", "content", "social media", "ads", "brand"],
+      "qualifications": [
+        "Experience with SEO and Google Ads",
+        "Content creation skills",
+        "Analytics tools familiarity"
+      ],
+      "resources": {
+        "tool": {
+          "title": "Canva",
+          "des": "Online design tool for marketing creatives.",
+          "link": "https://www.canva.com/"
+        },
+        "information": {
+          "title": "HubSpot Academy",
+          "des": "Free marketing certification courses.",
+          "link": "https://academy.hubspot.com/"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "header": "Project Manager",
+      "type": "Remote",
+      "status": "Hiring",
+      "Salary": "110,000",
+      "Review": "7",
+      "Company": "BuildPro",
+      "requirements": {
+        "circumstances": "8",
+        "barriers": "7",
+        "skills": "9",
+        "education": "8",
+        "capabilities": "9",
+        "capacity": "8"
+      },
+      "des": "Oversee team workflow and project delivery.",
+      "keywords": ["plan", "lead", "scrum", "budget", "timeline"],
+      "qualifications": [
+        "PMP Certification",
+        "Experience in Agile/Scrum",
+        "Team management experience"
+      ],
+      "resources": {
+        "tool": {
+          "title": "Trello",
+          "des": "Project management platform.",
+          "link": "https://trello.com/"
+        },
+        "information": {
+          "title": "PMI",
+          "des": "Project Management Institute.",
+          "link": "https://www.pmi.org/"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "header": "AI Researcher",
+      "type": "Remote",
+      "status": "Hiring",
+      "Salary": "180,000",
+      "Review": "9",
+      "Company": "ThinkTech",
+      "requirements": {
+        "circumstances": "9",
+        "barriers": "8",
+        "skills": "10",
+        "education": "10",
+        "capabilities": "10",
+        "capacity": "9"
+      },
+      "des": "Conduct cutting-edge research in AI models.",
+      "keywords": ["AI", "ML", "NLP", "research", "TensorFlow"],
+      "qualifications": [
+        "PhD in Computer Science or equivalent",
+        "Experience with ML frameworks",
+        "Published research papers"
+      ],
+      "resources": {
+        "tool": {
+          "title": "Google Colab",
+          "des": "Free Jupyter notebook environment.",
+          "link": "https://colab.research.google.com/"
+        },
+        "information": {
+          "title": "arXiv.org",
+          "des": "Repository of electronic preprints.",
+          "link": "https://arxiv.org/"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "header": "Technical Writer",
+      "type": "On-site",
+      "status": "Closed",
+      "Salary": "65,000",
+      "Review": "6",
+      "Company": "DocuMentors",
+      "requirements": {
+        "circumstances": "6",
+        "barriers": "7",
+        "skills": "8",
+        "education": "7",
+        "capabilities": "7",
+        "capacity": "7"
+      },
+      "des": "Create technical documents and manuals.",
+      "keywords": ["write", "document", "manual", "edit", "translate"],
+      "qualifications": [
+        "Strong written communication skills",
+        "Familiarity with technical products",
+        "Experience with CMS"
+      ],
+      "resources": {
+        "tool": {
+          "title": "Grammarly",
+          "des": "AI-powered writing assistant.",
+          "link": "https://www.grammarly.com/"
+        },
+        "information": {
+          "title": "Write the Docs",
+          "des": "Community for technical writers.",
+          "link": "https://www.writethedocs.org/"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "header": "IT Support Specialist",
+      "type": "On-site",
+      "status": "Hiring",
+      "Salary": "55,000",
+      "Review": "5",
+      "Company": "QuickFix IT",
+      "requirements": {
+        "circumstances": "7",
+        "barriers": "6",
+        "skills": "7",
+        "education": "6",
+        "capabilities": "7",
+        "capacity": "7"
+      },
+      "des": "Provide technical assistance and support.",
+      "keywords": ["support", "helpdesk", "network", "troubleshoot", "hardware"],
+      "qualifications": [
+        "Basic networking knowledge",
+        "Customer service skills",
+        "Experience with ticketing systems"
+      ],
+      "resources": {
+        "tool": {
+          "title": "CompTIA A+",
+          "des": "Certification for IT support roles.",
+          "link": "https://www.comptia.org/certifications/a"
+        },
+        "information": {
+          "title": "ITProTV",
+          "des": "Training videos for IT professionals.",
+          "link": "https://www.itpro.tv/"
+        }
+      }
+    }
+  ]
+  

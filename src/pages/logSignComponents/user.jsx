@@ -42,7 +42,8 @@ export default function UserProfile() {
   });
 
   return (
-    <Card className="w-full mx-auto mt-10 p-6">
+    <div className="w-full h-min-screen flex flex-col items-center justify-center">
+    <Card className="w-full mx-auto mt-28 mb-8 p-6">
       <CardHeader className="flex flex-col items-center">
         <Avatar className="w-24 h-24">
           <AvatarImage src={userData.profilePicture} alt="Profile Picture" />
@@ -99,5 +100,7 @@ export default function UserProfile() {
       </CardContent>
       <Button className="w-full mt-4">Edit Profile</Button>
     </Card>
+    </div>
+   
   );
 }

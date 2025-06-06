@@ -19,6 +19,7 @@ import {
 } from "@/components/ui/table";
 import { Card, CardContent } from "@/components/ui/card";
 import RecommendResource from "@/components/global/recomendResource";
+import { SelectSeparator } from "@/components/ui/select";
 
 export default function ResourceFindSearch() {
   const [toolDatabase, setToolDatabase] = useState([]);
@@ -194,108 +195,120 @@ export default function ResourceFindSearch() {
   
 
   return (
-    <div className="flex w-full items-center justify-start gap-3 p-4">
-      <Input
-        type="text"
-        placeholder="Search"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-        className="h-12 px-4 w-full text-sm"
-      />
-      <Button onClick={querySearch}>Search</Button>
-      <Button onClick={startListening} disabled={listening}>
-        🎙️ {listening ? "Listening..." : "Speak"}
-      </Button>
-      <Button onClick={stopListening} disabled={!listening}>
-        ⏹️ Stop
-      </Button>
-      <RecommendResource />
+    <div className="flex flex-col w-full h-min-screen mt-16">
+      <div className="text-center mb-12">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-500">
+                Research Hub
+              </span>
+            </h1>
+            <p className="text-blue-200 max-w-2xl mx-auto text-lg">
+              Incididunt id anim occaecat nostrud non amet ullamco laborum incididunt nostrud fugiat.
+            </p>
+      </div>
+
+      <div className="flex w-full items-center justify-start gap-3 p-8 bg-black/50">
+      
+        <Input
+          type="text"
+          placeholder="Search"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="h-12 px-4 w-full text-sm"
+        />
+        <Button onClick={querySearch}>Search</Button>
+        <Button onClick={startListening} disabled={listening}>
+          🎙️ {listening ? "Listening..." : "Speak"}
+        </Button>
+        <Button onClick={stopListening} disabled={!listening}>
+          ⏹️ Stop
+        </Button>
+        <RecommendResource />
 
 
-      <Dialog open={openDialog} onOpenChange={setOpenDialog}>
-        <DialogHeader>
-          <DialogTitle>Results</DialogTitle>
-        </DialogHeader>
-        <DialogContent>
+        <Dialog open={openDialog} onOpenChange={setOpenDialog}>
+          <DialogHeader>
+            <DialogTitle></DialogTitle>
+          </DialogHeader>
+          <DialogContent>
+            {defaultTool.length > 0 ? (
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead>Tool Name</TableHead>
+                    <TableHead>Type</TableHead>
+                    <TableHead>Description</TableHead>
+                    <TableHead>Link</TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {defaultTool.map((toolItem, index) => {
+                    const tool = toolItem.tool;
+                    return (
+                      <TableRow key={index}>
+                        <TableCell>{tool.title || "#"}</TableCell>
+                        <TableCell>{tool.type || "#"}</TableCell>
+                        <TableCell>{tool.des || "#"}</TableCell>
+                        <TableCell>
+                          <a href={tool.link || "#"} target="_blank" className="text-blue-500">
+                            Link
+                          </a>
+                        </TableCell>
+                        <TableCell> {tool.severityMatch} </TableCell>
+                      </TableRow>
+                    );
+                  })}
+                </TableBody>
+              </Table>
+            ) : (
+              <Card>
+                <CardContent>
+                  <h2>No Tool Data</h2>
+                </CardContent>
+              </Card>
+            )}
 
-          {/* Tools Section */}
-          {defaultTool.length > 0 ? (
-            <Table>
-              <TableHeader>
-                <TableRow>
-                  <TableHead>Tool Name</TableHead>
-                  <TableHead>Type</TableHead>
-                  <TableHead>Description</TableHead>
-                  <TableHead>Link</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {defaultTool.map((toolItem, index) => {
-                  const tool = toolItem.tool;
-                  return (
-                    <TableRow key={index}>
-                      <TableCell>{tool.title || "#"}</TableCell>
-                      <TableCell>{tool.type || "#"}</TableCell>
-                      <TableCell>{tool.des || "#"}</TableCell>
-                      <TableCell>
-                        <a href={tool.link || "#"} target="_blank" className="text-blue-500">
-                          Link
-                        </a>
-                      </TableCell>
-                      <TableCell> {tool.severityMatch} </TableCell>
-                    </TableRow>
-                  );
-                })}
-              </TableBody>
-            </Table>
-          ) : (
-            <Card>
-              <CardContent>
-                <h2>No Tool Data</h2>
-              </CardContent>
-            </Card>
-          )}
+            {defaultLibrary.length > 0 ? (
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead>Information Title</TableHead>
+                    <TableHead>Type</TableHead>
+                    <TableHead>Description</TableHead>
+                    <TableHead>Link</TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {defaultLibrary.map((libraryItem, index) => {
+                    const information = libraryItem.information;
+                    return (
+                      <TableRow key={index}>
+                        <TableCell>{information.title || "#"}</TableCell>
+                        <TableCell>{information.type || "#"}</TableCell>
+                        <TableCell>{information.des || "#"}</TableCell>
+                        <TableCell>
+                          <a href={information.link || "#"} target="_blank" className="text-blue-500">
+                            Link
+                          </a>
+                        </TableCell>
+                        <TableCell> {information.severityMatch} </TableCell>
+                      </TableRow>
+                    );
+                  })}
+                </TableBody>
+              </Table>
+            ) : (
+              <Card>
+                <CardContent>
+                  <h2>No Library Data</h2>
+                </CardContent>
+              </Card>
+            )}
+          </DialogContent>
+        </Dialog>
 
-          {/* Library Section */}
-          {defaultLibrary.length > 0 ? (
-            <Table>
-              <TableHeader>
-                <TableRow>
-                  <TableHead>Information Title</TableHead>
-                  <TableHead>Type</TableHead>
-                  <TableHead>Description</TableHead>
-                  <TableHead>Link</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {defaultLibrary.map((libraryItem, index) => {
-                  const information = libraryItem.information;
-                  return (
-                    <TableRow key={index}>
-                      <TableCell>{information.title || "#"}</TableCell>
-                      <TableCell>{information.type || "#"}</TableCell>
-                      <TableCell>{information.des || "#"}</TableCell>
-                      <TableCell>
-                        <a href={information.link || "#"} target="_blank" className="text-blue-500">
-                          Link
-                        </a>
-                      </TableCell>
-                      <TableCell> {information.severityMatch} </TableCell>
-                    </TableRow>
-                  );
-                })}
-              </TableBody>
-            </Table>
-          ) : (
-            <Card>
-              <CardContent>
-                <h2>No Library Data</h2>
-              </CardContent>
-            </Card>
-          )}
-        </DialogContent>
-      </Dialog>
-
+      </div>
     </div>
+    
   );
 }

@@ -223,7 +223,18 @@ export default function JobFindSearch() {
   
 
   return (
-    <div className="flex w-full items-center justify-start gap-3 p-4">
+    <div className="flex flex-col w-full mt-16">
+      <div className="text-center mb-12">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-500">
+            Job Seek
+          </span>
+        </h1>
+        <p className="text-blue-200 max-w-2xl mx-auto text-lg">
+          Incididunt id anim occaecat nostrud non amet ullamco laborum incididunt nostrud fugiat.
+        </p>
+      </div>
+      <div className="flex w-full items-center justify-start gap-3 p-4 bg-black/30">
       <Input
         type="text"
         placeholder="Search"
@@ -244,7 +255,7 @@ export default function JobFindSearch() {
 
       <Dialog open={openDialog} onOpenChange={setOpenDialog}>
         <DialogHeader>
-          <DialogTitle>Results</DialogTitle>
+          <DialogTitle></DialogTitle>
         </DialogHeader>
         <DialogContent>
           {/* Jobs Section */}
@@ -368,5 +379,7 @@ export default function JobFindSearch() {
       </Dialog>
 
     </div>
+    </div>
+    
   );
 }

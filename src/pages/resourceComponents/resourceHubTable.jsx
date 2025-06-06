@@ -99,8 +99,7 @@ export default function ResourceHubTable() {
   };
 
   return (
-    <div className="w-full p-10 items-center justify-center">
-      {/* Tabs for Library and Tools */}
+    <div className="w-full p-10 items-center justify-center bg-black/40 ">
       <Tabs defaultValue="library" className="mb-4">
         <TabsList>
           <TabsTrigger value="library" onClick={() => setActiveTab("library")}>
