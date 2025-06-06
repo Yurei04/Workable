@@ -37,7 +37,7 @@ export default function Hero() {
           </h2>
 
           <p className="mt-3 text-sm text-blue-300">
-            Proudly a 501(c)(3) nonprofit organization dedicated to youth-led impact.
+            Pariatur est aliquip cillum velit esse anim aute ullamco nisi ex ut.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-4 justify-center lg:justify-start">

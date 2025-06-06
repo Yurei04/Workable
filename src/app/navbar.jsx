@@ -4,6 +4,8 @@ import * as React from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import ModeToggle from "@/components/global/styleModes"
+import FontToggle from "@/components/global/fontToggle"
 
 const navLinks = [
   { title: "Home", href: "/homepage" },
@@ -36,13 +38,8 @@ export default function NavBar() {
                 <Link href={link.href}>{link.title}</Link>
               </Button>
             ))}
-            <Button
-              variant="ghost"
-              size="sm"
-              className="text-sm border border-blue-500 hover:border-blue-300 transition-colors cursor-pointer"
-            >
-              <Link href="/">Search Now</Link>
-            </Button>
+            <ModeToggle />
+            <FontToggle />
           </div>
 
           <div className="md:hidden">
@@ -54,6 +51,7 @@ export default function NavBar() {
             >
               {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </Button>
+            
           </div>
         </div>
 
@@ -71,13 +69,9 @@ export default function NavBar() {
                 <Link href={link.href}>{link.title}</Link>
               </Button>
             ))}
-            <Button
-              variant="ghost"
-              size="sm"
-              className="w-full justify-start text-sm border hover:border-blue-100 hover:bg-blue-900 transition-colors cursor-pointer"
-            >
-              <Link href="/">Search Now</Link>
-            </Button>
+            
+            <ModeToggle className="w-full"/>
+            <FontToggle className="w-full"/>
           </div>
         )}
       </nav>

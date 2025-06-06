@@ -17,27 +17,24 @@ export default function About() {
         className="flex flex-col lg:flex-row items-center justify-between gap-12 max-w-7xl w-full"
       >
         <div className="flex-1 text-left space-y-6">
-          <h2 className="text-4xl sm:text-5xl font-extrabold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-purple-500">
+          <h2 className="text-4xl sm:text-5xl font-extrabold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-blue-500">
             Who Are We?
           </h2>
 
           <div className="bg-transparent shadow-none p-0">
             <div className="px-0">
               <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-purple-100">
-                  Workable is a 501(c)(3) non-profit organization founded by
-                  teenagers with a passion for programming and technology. Our
-                  mission is to inspire and educate the next generation of
-                  innovators through hackathons and workshops.
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-100">
+                  Anim consequat occaecat ex officia magna duis sit tempor nulla. Laborum officia incididunt cillum amet aliquip 
+                  laborum cillum non adipisicing. Quis exercitation aliqua magna aute est irure ut aliquip fugiat id tempor veniam. 
+                  Magna amet fugiat quis aliquip aliquip labore adipisicing nostrud occaecat.
                 </span>
                 <br />
                 <br />
                 <span className="text-gray-400">
-                  We address often-overlooked challenges by equipping high
-                  school and college students with essential soft skills for
-                  thriving in the tech industry — through hands-on experiences
-                  like our free-to-enter hackathons. Our initiatives are built
-                  to empower, connect, and elevate future tech leaders.
+                  Anim consequat occaecat ex officia magna duis sit tempor nulla. Laborum officia incididunt cillum amet aliquip 
+                  laborum cillum non adipisicing. Quis exercitation aliqua magna aute est irure ut aliquip fugiat id tempor veniam. 
+                  Magna amet fugiat quis aliquip aliquip labore adipisicing nostrud occaecat.
                 </span>
               </p>
             </div>
@@ -51,7 +48,7 @@ export default function About() {
         >
           <Image
             src="/images/image2.jpg"
-            alt="About Hack United"
+            alt="About workable"
             fill
             className="object-cover"
           />

@@ -11,32 +11,32 @@ export default function Footer() {
             Workable
           </h2>
           <p className="text-sm text-blue-400">
-            Workable is fiscally sponsored by Hack Club Bank,<br />
-            a project by The Hack Foundation (d.b.a. Hack Club), a 501(c)(3) nonprofit (EIN: 81-2908499).
+            Workable is fiscally sponsored by workable<br />
+            Mollit exercitation excepteur aute laborum laborum est ipsum proident laborum aliqua.
           </p>
             <div className="flex justify-center md:justify-end gap-4">
-            <a href="mailto:team@hackunited.org" target="_blank" rel="noopener noreferrer">
+            <a href="/" target="_blank" rel="noopener noreferrer">
               <Mail className="h-5 w-5 hover:text-blue-500" />
             </a>
-            <a href="https://github.com/hackunited" target="_blank" rel="noopener noreferrer">
+            <a href="/" target="_blank" rel="noopener noreferrer">
               <Github className="h-5 w-5 hover:text-blue-500" />
             </a>
-            <a href="https://twitter.com/hackunited" target="_blank" rel="noopener noreferrer">
+            <a href="/" target="_blank" rel="noopener noreferrer">
               <Twitter className="h-5 w-5 hover:text-blue-500" />
             </a>
-            <a href="https://linkedin.com/company/hackunited" target="_blank" rel="noopener noreferrer">
+            <a href="/" target="_blank" rel="noopener noreferrer">
               <Linkedin className="h-5 w-5 hover:text-blue-500" />
             </a>
             </div>
         </div>
 
         <div className="flex flex-row items-center justify-center gap-2 text-sm">
-          <Link href="/" className="hover:text-blue-500 transition-colors">Home</Link>
-          <Link href="/team" className="hover:text-blue-500 transition-colors">Team</Link>
+          <Link href="/homepage" className="hover:text-blue-500 transition-colors">Home</Link>
+          <Link href="/profile" className="hover:text-blue-500 transition-colors">Profile</Link>
           <Link href="/blog" className="hover:text-blue-500 transition-colors">Blog</Link>
-          <Link href="/apply" className="hover:text-blue-500 transition-colors">Apply</Link>
-          <Link href="/donate" className="hover:text-blue-500 transition-colors">Donate</Link>
-          <Link href="/contact" className="hover:text-blue-500 transition-colors">Contact</Link>
+          <Link href="/resourceHub" className="hover:text-blue-500 transition-colors">Resource Hub</Link>
+          <Link href="/jobSeek" className="hover:text-blue-500 transition-colors">Job Seek</Link>
+          <Link href="/profile" className="hover:text-blue-500 transition-colors">Profile</Link>
         </div>
 
         <div className="space-y-4 text-center md:text-right flex flex-col">
@@ -60,7 +60,7 @@ export default function Footer() {
       </div>
 
       <div className="mt-10 text-center text-xs text-blue-500">
-        © {new Date().getFullYear()} HackUnited. All rights reserved.
+        © {new Date().getFullYear()} WorkAble. All rights reserved.
       </div>
     </footer>
   );

@@ -58,11 +58,11 @@ export default function Goals() {
         <div className="m-5">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl mb-6 text-center">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-blue-500">
-              Our Mission & Goals
+              Accessibility Features
             </span>
           </h1>
           <p className="text-center text-blue-200 max-w-2xl mx-auto">
-            Hack United exists to empower young creators by providing inclusive access to education, collaboration, and career development. Our goal is to build a community where innovation thrives.
+            Workable exists to empower young creators by providing inclusive access to education, collaboration, and career development. Our goal is to build a community where innovation thrives.
           </p>
         </div>
 
@@ -77,9 +77,7 @@ export default function Goals() {
                 </h2>
                 <Separator className="bg-blue-700 mb-6" />
                 <p className="text-blue-300 leading-relaxed">
-                  We teach more than just mechanical coding skills. As the world rapidly evolves,
-                  we envision an inclusive platform where everyone can learn about the exciting
-                  advancements in the tech field and gain knowledge to continue their programming journey.
+                  Pariatur eiusmod ipsum ullamco deserunt elit laborum do ad et labore culpa. Minim eu occaecat fugiat sunt officia et laboris voluptate dolor nisi labore adipisicing officia. Dolor anim magna occaecat officia reprehenderit elit aliqua minim nisi laboris.  Veniam mollit ex id ut duis Lorem.
                 </p>
               </CardContent>
             </Card>
@@ -94,9 +92,7 @@ export default function Goals() {
                 </h2>
                 <Separator className="bg-blue-700 mb-6" />
                 <p className="text-blue-300 leading-relaxed">
-                  We emphasize practical applications of programming and technology to prepare
-                  community members for the rapidly changing future. Our hackathons exemplify
-                  these goals by using real-world problems as development themes.
+                                    Pariatur eiusmod ipsum ullamco deserunt elit laborum do ad et labore culpa. Minim eu occaecat fugiat sunt officia et laboris voluptate dolor nisi labore adipisicing officia. Dolor anim magna occaecat officia reprehenderit elit aliqua minim nisi laboris.  Veniam mollit ex id ut duis Lorem.
                 </p>
               </CardContent>
             </Card>
@@ -111,9 +107,7 @@ export default function Goals() {
                 </h2>
                 <Separator className="bg-blue-700 mb-6" />
                 <p className="text-blue-300 leading-relaxed">
-                  Our community provides a platform for innovators to learn, grow, and support
-                  each other. We connect like-minded individuals to overcome challenges in acquiring
-                  new skills. Join us and thrive in a collaborative environment.
+                                    Pariatur eiusmod ipsum ullamco deserunt elit laborum do ad et labore culpa. Minim eu occaecat fugiat sunt officia et laboris voluptate dolor nisi labore adipisicing officia. Dolor anim magna occaecat officia reprehenderit elit aliqua minim nisi laboris.  Veniam mollit ex id ut duis Lorem.
                 </p>
               </CardContent>
             </Card>

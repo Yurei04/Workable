@@ -66,7 +66,7 @@ export default function ChatBotAI() {
 
           <DialogContent className="p-0 max-w-lg bg-black border border-white/10 shadow-2xl">
             <DialogHeader className="bg-gradient-to-r from-blue-700 to-cyan-600 px-6 py-4">
-              <DialogTitle className="text-white text-lg">Vox AI Assistant</DialogTitle>
+              <DialogTitle className="text-white text-lg">WorkAble Assistant</DialogTitle>
             </DialogHeader>
 
             <Card className="bg-white/5 backdrop-blur-xl border-none shadow-none rounded-none h-[70vh] flex flex-col">

@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const initiatives = [
   {
-    title: "Education",
+    title: "Job Search",
     icon: <CodeXml className="w-6 h-6 text-blue-400" />,
     items: [
       "- Online workshops hosted by startup founders & engineers",
@@ -22,7 +22,7 @@ const initiatives = [
     ],
   },
   {
-    title: "Hackathons",
+    title: "Learn and Create",
     icon: <Users className="w-6 h-6 text-blue-400" />,
     items: [
       "- Emphasis on soft skills & storytelling",
@@ -92,7 +92,7 @@ export default function Initiatives() {
               </span>
             </h1>
             <p className="text-blue-200 max-w-2xl mx-auto text-lg">
-              From education to events, our initiatives are built to empower the next generation of hackers and creators.
+              Magna cillum exercitation laboris magna adipisicing excepteur.
             </p>
           </div>
 

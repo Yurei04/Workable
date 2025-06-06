@@ -4,7 +4,7 @@ import Footer from "@/pages/footer";
 import About from "@/pages/homePageComponents/about";
 import Goals from "@/pages/homePageComponents/goals";
 import Initiatives from "@/pages/homePageComponents/initiatives";
-
+import ChatBotAI from "@/pages/chatbotComponents/chatbot";
 
 export default function Homepage () {
     return (
@@ -13,6 +13,7 @@ export default function Homepage () {
             <About />
             <Initiatives />
             <Goals />
+            <ChatBotAI />
         </div>
     )
 }
