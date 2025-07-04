@@ -37,7 +37,7 @@ export default function Hero() {
           </h2>
 
           <p className="mt-3 text-sm text-blue-300">
-            Pariatur est aliquip cillum velit esse anim aute ullamco nisi ex ut.
+            Your path to inclusive employment starts here!
           </p>
 
           <div className="mt-6 flex flex-wrap gap-4 justify-center lg:justify-start">
