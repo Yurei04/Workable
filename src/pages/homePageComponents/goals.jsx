@@ -41,7 +41,7 @@ function AnimatedCard({ children, direction = "left", rotate = "", justify = "st
   );
 }
 
-export default function Goals() {
+export default function AccessibilityFeatures() {
   return (
     <div className="flex flex-col w-full min-h-screen lg:mt-10 sm:my-10 px-4 sm:px-8 lg:px-16" id="Goals">
       <motion.div
@@ -73,11 +73,11 @@ export default function Goals() {
               <CardContent>
                 <h2 className="flex items-center gap-3 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-blue-500 mb-4">
                   <CodeXml className="w-7 h-7" />
-                  Accelerating Soft Skills
+                   Dyslexia-Friendly Fonts
                 </h2>
                 <Separator className="bg-blue-700 mb-6" />
                 <p className="text-blue-300 leading-relaxed">
-                  Pariatur eiusmod ipsum ullamco deserunt elit laborum do ad et labore culpa. Minim eu occaecat fugiat sunt officia et laboris voluptate dolor nisi labore adipisicing officia. Dolor anim magna occaecat officia reprehenderit elit aliqua minim nisi laboris.  Veniam mollit ex id ut duis Lorem.
+                  WorkAble uses specially designed fonts that improve readability for individuals with dyslexia. These fonts have distinct letterforms and consistent spacing, helping reduce letter confusion and visual distortion. This makes reading job descriptions, instructions, and navigation easier and more accessible.
                 </p>
               </CardContent>
             </Card>
@@ -88,11 +88,11 @@ export default function Goals() {
               <CardContent>
                 <h2 className="flex items-center gap-3 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-blue-500 mb-4">
                   <AppWindow className="w-7 h-7" />
-                  Practical Applications
+                  Speech-to-Text (STT)
                 </h2>
                 <Separator className="bg-blue-700 mb-6" />
                 <p className="text-blue-300 leading-relaxed">
-                                    Pariatur eiusmod ipsum ullamco deserunt elit laborum do ad et labore culpa. Minim eu occaecat fugiat sunt officia et laboris voluptate dolor nisi labore adipisicing officia. Dolor anim magna occaecat officia reprehenderit elit aliqua minim nisi laboris.  Veniam mollit ex id ut duis Lorem.
+                   Speech-to-Text allows users to speak into their device and convert their voice into written text. This is particularly helpful for individuals with motor impairments, limited mobility, or difficulty typing. It empowers users to fill out job applications, search for jobs, and communicate more easily.
                 </p>
               </CardContent>
             </Card>
@@ -103,11 +103,11 @@ export default function Goals() {
               <CardContent>
                 <h2 className="flex items-center gap-3 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-blue-500 mb-4">
                   <Users className="w-7 h-7" />
-                  Connecting Innovators
+                  Text-to-Speech (TTS)
                 </h2>
                 <Separator className="bg-blue-700 mb-6" />
                 <p className="text-blue-300 leading-relaxed">
-                                    Pariatur eiusmod ipsum ullamco deserunt elit laborum do ad et labore culpa. Minim eu occaecat fugiat sunt officia et laboris voluptate dolor nisi labore adipisicing officia. Dolor anim magna occaecat officia reprehenderit elit aliqua minim nisi laboris.  Veniam mollit ex id ut duis Lorem.
+                  Text-to-Speech reads out on-screen content aloud for users with visual impairments, dyslexia, or cognitive disabilities. It supports better information retention and allows hands-free navigation of the platform. TTS also enables users to listen to job postings, application steps, and system messages in real time.
                 </p>
               </CardContent>
             </Card>

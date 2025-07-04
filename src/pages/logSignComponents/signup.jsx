@@ -240,7 +240,7 @@ export default function SignupPage() {
           </Button>
         ) : (
           <Button type="submit" className="w-1/3" onClick={handleSubmit}>
-            <Link href="/layoutPage/homeLayout">Complete</Link>
+            <Link href="/homepage">Complete</Link>
           </Button>
         )}
       </CardFooter>

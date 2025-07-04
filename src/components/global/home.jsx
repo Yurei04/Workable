@@ -2,8 +2,8 @@ import Hero from "@/pages/homePageComponents/hero";
 import NavBar from "./navbar";
 import Footer from "@/pages/footer";
 import About from "@/pages/homePageComponents/about";
-import Goals from "@/pages/homePageComponents/goals";
 import Initiatives from "@/pages/homePageComponents/initiatives";
+import AccessibilityFeatures from "@/pages/homePageComponents/goals";
 
 
 export default function HomeSection() {
@@ -13,7 +13,7 @@ export default function HomeSection() {
         <Hero />
         <About />
         <Initiatives />
-        <Goals />
+        <AccessibilityFeatures />
         <Footer />
    </div>
   );

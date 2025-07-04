@@ -1,9 +1,8 @@
 import LoginForm from "@/pages/logSignComponents/loginPage";
-import ResourceHubLayout from "./(layout)/resourceHub/layout";
 
 export default function Home() {
   return (
-   <div className="justify-center items-center"> 
+   <div className="flex flex-col justify-center items-center p-15"> 
       <LoginForm />
    </div>
   );

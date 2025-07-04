@@ -8,11 +8,10 @@ import Link from "next/link";
 
 const initiatives = [
   {
-    title: "Job Search",
+    title: "Accessible Job Platform Design",
     icon: <CodeXml className="w-6 h-6 text-blue-400" />,
     items: [
-      "- Online workshops hosted by startup founders & engineers",
-      "- Weekly coding challenges and mentorship sessions",
+      "-We are developing a user-friendly job-seeking platform with built-in accessibility features, including dyslexia-friendly fonts, high-contrast modes, text-to-speech, and speech-to-text functionalities.",
       <>
         <Link className="text-blue-400 underline" href="#">
           - Blog
@@ -22,21 +21,17 @@ const initiatives = [
     ],
   },
   {
-    title: "Learn and Create",
+    title: "Assistive Technology Integration",
     icon: <Users className="w-6 h-6 text-blue-400" />,
     items: [
-      "- Emphasis on soft skills & storytelling",
-      "- Cultivating team collaboration and leadership",
-      "- Launchpad for student-led startups",
+      "WorkAble incorporates modern assistive technologies—such as voice output communication aids (VOCA), screen readers, and AI-enhanced speech systems—to ensure all users can interact confidently with job content and communication tools.",
     ],
   },
   {
-    title: "Connecting Innovators",
+    title: "Inclusive Employment Awareness",
     icon: <AppWindow className="w-6 h-6 text-blue-400" />,
     items: [
-      "- 1,500+ Discord members across skill levels",
-      "- Connect with professionals & mentors globally",
-      "- Programs to launch, fund, or publish your projects",
+      "We promote inclusive hiring practices by providing educational resources and accessibility guidelines for employers to better understand and support applicants with disabilities.",
     ],
   },
 ];

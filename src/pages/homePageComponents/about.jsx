@@ -25,16 +25,12 @@ export default function About() {
             <div className="px-0">
               <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-100">
-                  Anim consequat occaecat ex officia magna duis sit tempor nulla. Laborum officia incididunt cillum amet aliquip 
-                  laborum cillum non adipisicing. Quis exercitation aliqua magna aute est irure ut aliquip fugiat id tempor veniam. 
-                  Magna amet fugiat quis aliquip aliquip labore adipisicing nostrud occaecat.
+                  We are a team of passionate developers and researchers committed to building a more inclusive digital future. Our project, WorkAble, is a job-seeking platform designed to empower individuals with disabilities by breaking down barriers to employment through assistive technology and inclusive design.
                 </span>
                 <br />
                 <br />
                 <span className="text-gray-400">
-                  Anim consequat occaecat ex officia magna duis sit tempor nulla. Laborum officia incididunt cillum amet aliquip 
-                  laborum cillum non adipisicing. Quis exercitation aliqua magna aute est irure ut aliquip fugiat id tempor veniam. 
-                  Magna amet fugiat quis aliquip aliquip labore adipisicing nostrud occaecat.
+                  At the core of our mission is the belief that everyone deserves equal access to opportunity. Whether you face visual, auditory, speech, or cognitive challenges, WorkAble is here to support your journey toward employment, independence, and self-fulfillment.
                 </span>
               </p>
             </div>

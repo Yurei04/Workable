@@ -1,7 +1,7 @@
 import NavBar from "@/components/global/navbar";
 import Footer from "@/pages/footer";
 
-export default function JobSeekLayout({ children }) {
+export default function SignInLayout({ children }) {
   return (
       <div>
         <NavBar />

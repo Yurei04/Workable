@@ -7,7 +7,7 @@ import ChatBotAI from "@/pages/chatbotComponents/chatbot";
 
 export default function ResourceHub () {
     return (
-        <div className="flex flex-col w-full min-h-screen mt-6 py-20 items-center justify-center overflow-x-hidden">
+        <div className="flex flex-col w-full min-h-screen pt-20 items-center justify-center overflow-x-hidden">
             <ResourceFindSearch />
             <ResourceHubTable />
             <ChatBotAI />

@@ -1,5 +1,5 @@
 import Hero from "@/pages/homePageComponents/hero";
-import NavBar from "@/app/navbar";
+import NavBar from "@/components/global/navbar";
 import Footer from "@/pages/footer";
 import About from "@/pages/homePageComponents/about";
 import Goals from "@/pages/homePageComponents/goals";

@@ -20,6 +20,7 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import RecommendResource from "@/components/global/recomendResource";
 import { SelectSeparator } from "@/components/ui/select";
+import QuoteCarousel from "@/components/global/quotes";
 
 export default function ResourceFindSearch() {
   const [toolDatabase, setToolDatabase] = useState([]);
@@ -202,9 +203,7 @@ export default function ResourceFindSearch() {
                 Research Hub
               </span>
             </h1>
-            <p className="text-blue-200 max-w-2xl mx-auto text-lg">
-              Incididunt id anim occaecat nostrud non amet ullamco laborum incididunt nostrud fugiat.
-            </p>
+          <QuoteCarousel />
       </div>
 
       <div className="flex w-full items-center justify-start gap-3 p-8 bg-black/50">

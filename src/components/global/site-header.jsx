@@ -1,6 +1,6 @@
 import { Separator } from "@/components/ui/separator"
 import { SidebarTrigger } from "@/components/ui/sidebar"
-import NavBar from "@/app/navbar"
+import NavBar from "@/components/global/navbar"
 import { Button } from "@/components/ui/button"
 import "@/app/globals.css";
 

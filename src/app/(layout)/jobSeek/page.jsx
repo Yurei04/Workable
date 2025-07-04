@@ -6,8 +6,7 @@ import ChatBotAI from "@/pages/chatbotComponents/chatbot";
 
 export default function JobSeek () {
     return (
-        <div className="flex flex-col w-full min-h-screen mt-6 py-20 items-center justify-center overflow-x-hidden">
-            <JobFindSearch />
+        <div className="flex flex-col w-full min-h-screen pt-20  items-center justify-center overflow-x-hidden">
             <JobFindTableBack />
             <ChatBotAI />
         </div>

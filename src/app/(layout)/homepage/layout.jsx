@@ -1,4 +1,4 @@
-import NavBar from "@/app/navbar";
+import NavBar from "@/components/global/navbar";
 import Footer from "@/pages/footer";
 
 

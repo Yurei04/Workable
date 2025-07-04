@@ -16,7 +16,7 @@ export default function Recommend() {
     return (
         <div className="flex items-center justify-center p-4">
             {/* Button to Open Dialog */}
-            <Button onClick={() => setOpenDialog(true)}>
+            <Button className="w-full lg:w-auto" onClick={() => setOpenDialog(true)}>
                 Open Recommendations
             </Button>
 
