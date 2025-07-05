@@ -224,8 +224,7 @@ export default function JobFindSearch() {
 
   return (
     <div className="flex flex-col w-full">
-
-      <div className="flex w-full items-center justify-start gap-3 p-4 bg-black/30">
+      <div className="flex w-full items-center justify-start gap-3 p-4 ">
       <Input
         type="text"
         placeholder="Search"

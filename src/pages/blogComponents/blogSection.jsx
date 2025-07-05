@@ -79,9 +79,9 @@ export default function BlogSection() {
               </DialogTrigger>
               <DialogContent className="text-sm text-left max-w-4xl bg-black/90 shadow-lg ring-1 ring-black/5 m-5">
                 <DialogTitle className="sr-only">Story Highlight</DialogTitle>
-                <h2 className="text-lg font-bold text-white">Meet Sophia – A Hack United Mentor</h2>
+                <h2 className="text-lg font-bold text-white">Meet Sophia – A WorkAble Job Seeker</h2>
                 <p className="text-blue-200 mt-2">
-                  Sophia shares how volunteering with Hack United gave her a platform to inspire young coders across the globe.
+                  Sophia shares how searching with WorkAble gave her a platform to find job that accomodates accessibility.
                 </p>
                 <p className="text-muted-foreground text-xs italic mt-4">
                   Want to be featured? Reach out to{" "}

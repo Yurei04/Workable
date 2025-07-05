@@ -142,29 +142,29 @@ export default function JobFindTableBack() {
       <div className="w-full h-min-screen grid lg:grid-cols-2 sm-grid-cols-2 gap-6"> 
           <ScrollArea className="h-screen w-full flex flex-col items-center justify-start  p-4">
             {paginatedData.map((data, index) => (
-                <div key={index} className="w-full max-h-1/4 flex lg:flex-row sm:flex-col justify-between gap-4 border bg-blue-700/30 rounded-2xl p-6 mb-4">
+                <div key={index} className="w-full max-h-1/4 flex lg:flex-row sm:flex-col justify-between gap-4 bg-gradient-to-br from-black/60 to-black/30 backdrop-blur-lg border border-blue-800 shadow-xl rounded-2xl p-6 mb-4">
                     <div className="lg:w-full sm:w-full gap-2  flex flex-col bg-blue-500/20 border border-blue-500 rounded-xl p-2">
                       <div className="flex flex-row gap-2">
-                        <div className="flex items-center lg:w-1/3 sm:w-1/2 justify-center h-auto border border-blue-500 rounded-lg">
+                        <div className="flex items-center lg:w-1/3 sm:w-1/2 justify-center h-auto bg-black/30 backdrop-blur-md rounded-lg">
                             <img src="/images/image2.jpg" alt={data.job.title} className="rounded-lg"/>
                         </div>
-                        <div className="bg-blue-500/20 rounded-lg p-2">
-                            <h1 className="text-lg"><b>{data.job.title}</b></h1>
+                        <div className="bg-black/30 backdrop-blur-md rounded-lg p-2">
+                            <h1 className="text-xl"><b>{data.job.title}</b></h1>
                             <h2><b>Company:</b> Xyz</h2>
-                            <h2><b>Type:</b> <span className="text-sm">{data.job.type}</span></h2>
-                            <h2><b>Description:</b> <span className="text-sm">{data.job.des}</span></h2>
+                            <h2><b>Type:</b> <span className="text-md">{data.job.type}</span></h2>
+                            <h2><b>Description:</b> <span className="text-md">{data.job.des}</span></h2>
                         </div>
                       </div>
-                        <div className="bg-blue-500/20 rounded-lg p-2">
+                        <div className="bg-black/30 backdrop-blur-md rounded-lg p-2">
                             <h2><b>CapabilityRequired:</b> <span className="text-sm">{data.job.requirements.capabilityRequired}</span></h2>
                         </div>
-                        <div className="bg-blue-500/20 rounded-lg p-2">
+                        <div className="bg-black/30 backdrop-blur-md rounded-lg p-2">
                             <h2><b>Resources:</b> <span className="text-sm">{data.job.resources.information.title}</span></h2>
                             <h2><b>Tool:</b> <span className="text-sm">{data.job.resources.tool.title}</span></h2>
                         </div>
-                        <div className="flex flex-col items-center justify-start gap-4 border bg-blue-800/50 rounded-xl p-2">
-                          <Button className="w-full cursor-pointer" onClick={() => setSelectedJob(data)}>More</Button>
-                          <Button className="w-full cursor-pointer" onClick={() => listen(data)}>Listen</Button>
+                        <div className="flex flex-col items-center justify-start gap-4 border bg-black/30 backdrop-blur-md rounded-xl p-2">
+                          <Button className="w-full cursor-pointer bg-blue-600 hover:bg-blue-500 text-white" onClick={() => setSelectedJob(data)}>More</Button>
+                          <Button className="w-full cursor-pointer bg-blue-600 hover:bg-blue-500 text-white" onClick={() => listen(data)}>Listen</Button>
                         </div>
                     </div>
 
